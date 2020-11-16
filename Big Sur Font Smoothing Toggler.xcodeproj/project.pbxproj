@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		535090332562BD94005CCD39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535090322562BD94005CCD39 /* AppDelegate.swift */; };
+		535090352562BD95005CCD39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 535090342562BD95005CCD39 /* Assets.xcassets */; };
+		535090382562BD95005CCD39 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 535090362562BD95005CCD39 /* MainMenu.xib */; };
+		535090442562BD95005CCD39 /* Big_Sur_Font_Smoothing_TogglerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535090432562BD95005CCD39 /* Big_Sur_Font_Smoothing_TogglerTests.swift */; };
+		5350904F2562BD95005CCD39 /* Big_Sur_Font_Smoothing_TogglerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350904E2562BD95005CCD39 /* Big_Sur_Font_Smoothing_TogglerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		535090402562BD95005CCD39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 535090272562BD94005CCD39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5350902E2562BD94005CCD39;
+			remoteInfo = "Big Sur Font Smoothing Toggler";
+		};
+		5350904B2562BD95005CCD39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 535090272562BD94005CCD39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5350902E2562BD94005CCD39;
+			remoteInfo = "Big Sur Font Smoothing Toggler";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5350902F2562BD94005CCD39 /* Big Sur Font Smoothing Toggler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Big Sur Font Smoothing Toggler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		535090322562BD94005CCD39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		535090342562BD95005CCD39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		535090372562BD95005CCD39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		535090392562BD95005CCD39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5350903A2562BD95005CCD39 /* Big_Sur_Font_Smoothing_Toggler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Big_Sur_Font_Smoothing_Toggler.entitlements; sourceTree = "<group>"; };
+		5350903F2562BD95005CCD39 /* Big Sur Font Smoothing TogglerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Big Sur Font Smoothing TogglerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		535090432562BD95005CCD39 /* Big_Sur_Font_Smoothing_TogglerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Big_Sur_Font_Smoothing_TogglerTests.swift; sourceTree = "<group>"; };
+		535090452562BD95005CCD39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5350904A2562BD95005CCD39 /* Big Sur Font Smoothing TogglerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Big Sur Font Smoothing TogglerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5350904E2562BD95005CCD39 /* Big_Sur_Font_Smoothing_TogglerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Big_Sur_Font_Smoothing_TogglerUITests.swift; sourceTree = "<group>"; };
+		535090502562BD95005CCD39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5350902C2562BD94005CCD39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5350903C2562BD95005CCD39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		535090472562BD95005CCD39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		535090262562BD94005CCD39 = {
+			isa = PBXGroup;
+			children = (
+				535090312562BD94005CCD39 /* Big Sur Font Smoothing Toggler */,
+				535090422562BD95005CCD39 /* Big Sur Font Smoothing TogglerTests */,
+				5350904D2562BD95005CCD39 /* Big Sur Font Smoothing TogglerUITests */,
+				535090302562BD94005CCD39 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		535090302562BD94005CCD39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5350902F2562BD94005CCD39 /* Big Sur Font Smoothing Toggler.app */,
+				5350903F2562BD95005CCD39 /* Big Sur Font Smoothing TogglerTests.xctest */,
+				5350904A2562BD95005CCD39 /* Big Sur Font Smoothing TogglerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		535090312562BD94005CCD39 /* Big Sur Font Smoothing Toggler */ = {
+			isa = PBXGroup;
+			children = (
+				535090322562BD94005CCD39 /* AppDelegate.swift */,
+				535090342562BD95005CCD39 /* Assets.xcassets */,
+				535090362562BD95005CCD39 /* MainMenu.xib */,
+				535090392562BD95005CCD39 /* Info.plist */,
+				5350903A2562BD95005CCD39 /* Big_Sur_Font_Smoothing_Toggler.entitlements */,
+			);
+			path = "Big Sur Font Smoothing Toggler";
+			sourceTree = "<group>";
+		};
+		535090422562BD95005CCD39 /* Big Sur Font Smoothing TogglerTests */ = {
+			isa = PBXGroup;
+			children = (
+				535090432562BD95005CCD39 /* Big_Sur_Font_Smoothing_TogglerTests.swift */,
+				535090452562BD95005CCD39 /* Info.plist */,
+			);
+			path = "Big Sur Font Smoothing TogglerTests";
+			sourceTree = "<group>";
+		};
+		5350904D2562BD95005CCD39 /* Big Sur Font Smoothing TogglerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5350904E2562BD95005CCD39 /* Big_Sur_Font_Smoothing_TogglerUITests.swift */,
+				535090502562BD95005CCD39 /* Info.plist */,
+			);
+			path = "Big Sur Font Smoothing TogglerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5350902E2562BD94005CCD39 /* Big Sur Font Smoothing Toggler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 535090532562BD95005CCD39 /* Build configuration list for PBXNativeTarget "Big Sur Font Smoothing Toggler" */;
+			buildPhases = (
+				5350902B2562BD94005CCD39 /* Sources */,
+				5350902C2562BD94005CCD39 /* Frameworks */,
+				5350902D2562BD94005CCD39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Big Sur Font Smoothing Toggler";
+			productName = "Big Sur Font Smoothing Toggler";
+			productReference = 5350902F2562BD94005CCD39 /* Big Sur Font Smoothing Toggler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5350903E2562BD95005CCD39 /* Big Sur Font Smoothing TogglerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 535090562562BD95005CCD39 /* Build configuration list for PBXNativeTarget "Big Sur Font Smoothing TogglerTests" */;
+			buildPhases = (
+				5350903B2562BD95005CCD39 /* Sources */,
+				5350903C2562BD95005CCD39 /* Frameworks */,
+				5350903D2562BD95005CCD39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				535090412562BD95005CCD39 /* PBXTargetDependency */,
+			);
+			name = "Big Sur Font Smoothing TogglerTests";
+			productName = "Big Sur Font Smoothing TogglerTests";
+			productReference = 5350903F2562BD95005CCD39 /* Big Sur Font Smoothing TogglerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		535090492562BD95005CCD39 /* Big Sur Font Smoothing TogglerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 535090592562BD95005CCD39 /* Build configuration list for PBXNativeTarget "Big Sur Font Smoothing TogglerUITests" */;
+			buildPhases = (
+				535090462562BD95005CCD39 /* Sources */,
+				535090472562BD95005CCD39 /* Frameworks */,
+				535090482562BD95005CCD39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5350904C2562BD95005CCD39 /* PBXTargetDependency */,
+			);
+			name = "Big Sur Font Smoothing TogglerUITests";
+			productName = "Big Sur Font Smoothing TogglerUITests";
+			productReference = 5350904A2562BD95005CCD39 /* Big Sur Font Smoothing TogglerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		535090272562BD94005CCD39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					5350902E2562BD94005CCD39 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					5350903E2562BD95005CCD39 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 5350902E2562BD94005CCD39;
+					};
+					535090492562BD95005CCD39 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 5350902E2562BD94005CCD39;
+					};
+				};
+			};
+			buildConfigurationList = 5350902A2562BD94005CCD39 /* Build configuration list for PBXProject "Big Sur Font Smoothing Toggler" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 535090262562BD94005CCD39;
+			productRefGroup = 535090302562BD94005CCD39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5350902E2562BD94005CCD39 /* Big Sur Font Smoothing Toggler */,
+				5350903E2562BD95005CCD39 /* Big Sur Font Smoothing TogglerTests */,
+				535090492562BD95005CCD39 /* Big Sur Font Smoothing TogglerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5350902D2562BD94005CCD39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				535090352562BD95005CCD39 /* Assets.xcassets in Resources */,
+				535090382562BD95005CCD39 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5350903D2562BD95005CCD39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		535090482562BD95005CCD39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5350902B2562BD94005CCD39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				535090332562BD94005CCD39 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5350903B2562BD95005CCD39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				535090442562BD95005CCD39 /* Big_Sur_Font_Smoothing_TogglerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		535090462562BD95005CCD39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5350904F2562BD95005CCD39 /* Big_Sur_Font_Smoothing_TogglerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		535090412562BD95005CCD39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5350902E2562BD94005CCD39 /* Big Sur Font Smoothing Toggler */;
+			targetProxy = 535090402562BD95005CCD39 /* PBXContainerItemProxy */;
+		};
+		5350904C2562BD95005CCD39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5350902E2562BD94005CCD39 /* Big Sur Font Smoothing Toggler */;
+			targetProxy = 5350904B2562BD95005CCD39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		535090362562BD95005CCD39 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				535090372562BD95005CCD39 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		535090512562BD95005CCD39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		535090522562BD95005CCD39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		535090542562BD95005CCD39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Big Sur Font Smoothing Toggler/Big_Sur_Font_Smoothing_Toggler.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4YNZUF26AM;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Big Sur Font Smoothing Toggler/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bouncetechnologies.Big-Sur-Font-Smoothing-Toggler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		535090552562BD95005CCD39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Big Sur Font Smoothing Toggler/Big_Sur_Font_Smoothing_Toggler.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4YNZUF26AM;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Big Sur Font Smoothing Toggler/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bouncetechnologies.Big-Sur-Font-Smoothing-Toggler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		535090572562BD95005CCD39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4YNZUF26AM;
+				INFOPLIST_FILE = "Big Sur Font Smoothing TogglerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bouncetechnologies.Big-Sur-Font-Smoothing-TogglerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Big Sur Font Smoothing Toggler.app/Contents/MacOS/Big Sur Font Smoothing Toggler";
+			};
+			name = Debug;
+		};
+		535090582562BD95005CCD39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4YNZUF26AM;
+				INFOPLIST_FILE = "Big Sur Font Smoothing TogglerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bouncetechnologies.Big-Sur-Font-Smoothing-TogglerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Big Sur Font Smoothing Toggler.app/Contents/MacOS/Big Sur Font Smoothing Toggler";
+			};
+			name = Release;
+		};
+		5350905A2562BD95005CCD39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4YNZUF26AM;
+				INFOPLIST_FILE = "Big Sur Font Smoothing TogglerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bouncetechnologies.Big-Sur-Font-Smoothing-TogglerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Big Sur Font Smoothing Toggler";
+			};
+			name = Debug;
+		};
+		5350905B2562BD95005CCD39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4YNZUF26AM;
+				INFOPLIST_FILE = "Big Sur Font Smoothing TogglerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bouncetechnologies.Big-Sur-Font-Smoothing-TogglerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Big Sur Font Smoothing Toggler";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5350902A2562BD94005CCD39 /* Build configuration list for PBXProject "Big Sur Font Smoothing Toggler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				535090512562BD95005CCD39 /* Debug */,
+				535090522562BD95005CCD39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		535090532562BD95005CCD39 /* Build configuration list for PBXNativeTarget "Big Sur Font Smoothing Toggler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				535090542562BD95005CCD39 /* Debug */,
+				535090552562BD95005CCD39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		535090562562BD95005CCD39 /* Build configuration list for PBXNativeTarget "Big Sur Font Smoothing TogglerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				535090572562BD95005CCD39 /* Debug */,
+				535090582562BD95005CCD39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		535090592562BD95005CCD39 /* Build configuration list for PBXNativeTarget "Big Sur Font Smoothing TogglerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5350905A2562BD95005CCD39 /* Debug */,
+				5350905B2562BD95005CCD39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 535090272562BD94005CCD39 /* Project object */;
+}
