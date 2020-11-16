@@ -12,6 +12,18 @@
 		535090382562BD95005CCD39 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 535090362562BD95005CCD39 /* MainMenu.xib */; };
 		535090442562BD95005CCD39 /* Big_Sur_Font_Smoothing_TogglerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535090432562BD95005CCD39 /* Big_Sur_Font_Smoothing_TogglerTests.swift */; };
 		5350904F2562BD95005CCD39 /* Big_Sur_Font_Smoothing_TogglerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350904E2562BD95005CCD39 /* Big_Sur_Font_Smoothing_TogglerUITests.swift */; };
+		535090632562BE80005CCD39 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535090612562BE80005CCD39 /* MainWindowController.swift */; };
+		535090642562BE80005CCD39 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535090612562BE80005CCD39 /* MainWindowController.swift */; };
+		535090652562BE80005CCD39 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535090612562BE80005CCD39 /* MainWindowController.swift */; };
+		535090662562BE80005CCD39 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 535090622562BE80005CCD39 /* MainWindowController.xib */; };
+		535090672562BE80005CCD39 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 535090622562BE80005CCD39 /* MainWindowController.xib */; };
+		535090682562BE80005CCD39 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 535090622562BE80005CCD39 /* MainWindowController.xib */; };
+		5350906D2562BEF0005CCD39 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350906C2562BEF0005CCD39 /* Extensions.swift */; };
+		5350906E2562BEF0005CCD39 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350906C2562BEF0005CCD39 /* Extensions.swift */; };
+		5350906F2562BEF0005CCD39 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350906C2562BEF0005CCD39 /* Extensions.swift */; };
+		535090842562DE10005CCD39 /* FontSmoothingDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535090832562DE10005CCD39 /* FontSmoothingDefaults.swift */; };
+		535090852562DE10005CCD39 /* FontSmoothingDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535090832562DE10005CCD39 /* FontSmoothingDefaults.swift */; };
+		535090862562DE10005CCD39 /* FontSmoothingDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535090832562DE10005CCD39 /* FontSmoothingDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +56,10 @@
 		5350904A2562BD95005CCD39 /* Big Sur Font Smoothing TogglerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Big Sur Font Smoothing TogglerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5350904E2562BD95005CCD39 /* Big_Sur_Font_Smoothing_TogglerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Big_Sur_Font_Smoothing_TogglerUITests.swift; sourceTree = "<group>"; };
 		535090502562BD95005CCD39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		535090612562BE80005CCD39 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		535090622562BE80005CCD39 /* MainWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
+		5350906C2562BEF0005CCD39 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		535090832562DE10005CCD39 /* FontSmoothingDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSmoothingDefaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +111,10 @@
 			isa = PBXGroup;
 			children = (
 				535090322562BD94005CCD39 /* AppDelegate.swift */,
+				535090612562BE80005CCD39 /* MainWindowController.swift */,
+				535090832562DE10005CCD39 /* FontSmoothingDefaults.swift */,
+				5350906C2562BEF0005CCD39 /* Extensions.swift */,
+				535090622562BE80005CCD39 /* MainWindowController.xib */,
 				535090342562BD95005CCD39 /* Assets.xcassets */,
 				535090362562BD95005CCD39 /* MainMenu.xib */,
 				535090392562BD95005CCD39 /* Info.plist */,
@@ -225,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				535090352562BD95005CCD39 /* Assets.xcassets in Resources */,
+				535090662562BE80005CCD39 /* MainWindowController.xib in Resources */,
 				535090382562BD95005CCD39 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				535090672562BE80005CCD39 /* MainWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				535090682562BE80005CCD39 /* MainWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +273,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				535090632562BE80005CCD39 /* MainWindowController.swift in Sources */,
+				535090842562DE10005CCD39 /* FontSmoothingDefaults.swift in Sources */,
+				5350906D2562BEF0005CCD39 /* Extensions.swift in Sources */,
 				535090332562BD94005CCD39 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +284,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				535090642562BE80005CCD39 /* MainWindowController.swift in Sources */,
+				535090852562DE10005CCD39 /* FontSmoothingDefaults.swift in Sources */,
+				5350906E2562BEF0005CCD39 /* Extensions.swift in Sources */,
 				535090442562BD95005CCD39 /* Big_Sur_Font_Smoothing_TogglerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +295,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				535090652562BE80005CCD39 /* MainWindowController.swift in Sources */,
+				535090862562DE10005CCD39 /* FontSmoothingDefaults.swift in Sources */,
+				5350906F2562BEF0005CCD39 /* Extensions.swift in Sources */,
 				5350904F2562BD95005CCD39 /* Big_Sur_Font_Smoothing_TogglerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
