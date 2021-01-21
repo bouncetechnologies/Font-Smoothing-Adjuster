@@ -1,20 +1,17 @@
 //
-//  FontSmoothingDefaults.swift
+//  DefaultsProcessRunner.swift
 //  Big Sur Font Smoothing Toggler
 //
-//  Created by Alastair Byrne on 16/11/2020.
+//  Created by Alastair Byrne on 21/01/2021.
 //
 
 import Foundation
-import os.log
 
-class FontSmoothingDefaults {
-    
+class DefaultsProcessRunner {
     private let defaultsUrl = URL(fileURLWithPath: "/usr/bin/defaults")
     private let domainDefaultPairDoesNotExistText = "The domain/default pair of (kCFPreferencesAnyApplication, AppleFontSmoothing) does not exist"
-    private typealias ProcessArguments = [String]
     
-    private let setFontSmoothingStateArguments: [FontSmoothingOptions : ProcessArguments] = [
+    private let setFontSmoothingStateArguments: [FontSmoothingOptions : [String]] = [
         .defaultFontSmoothing : ["-currentHost", "delete", "-g", "AppleFontSmoothing"],
         .noFontSmoothing : ["-currentHost", "write", "-g", "AppleFontSmoothing", "-int", "0"],
         .lightFontSmoothing : ["-currentHost", "write", "-g", "AppleFontSmoothing", "-int", "1"],
@@ -59,25 +56,6 @@ class FontSmoothingDefaults {
         }
     }
     
-    func getFontSmoothingState() throws -> FontSmoothingOptions {
-        let result = try runDefaultsCommand(with: getFontSmoothingStateArguments)
-        
-        switch result.output {
-        case "0\n":
-            return .noFontSmoothing
-        case "1\n":
-            return .lightFontSmoothing
-        case "2\n":
-            return .mediumFontSmoothing
-        case "3\n":
-            return .heavyFontSmoothing
-        case domainDefaultPairDoesNotExistText:
-            return .defaultFontSmoothing
-        default:
-            throw FontSmoothingDefaultsError.unknownError
-        }
-    }
-    
     func isFontSmoothingEnabled() throws -> Bool {
         do {
             let result = try runDefaultsCommand(with: getFontSmoothingStateArguments)
@@ -100,7 +78,7 @@ class FontSmoothingDefaults {
         }
     }
     
-    private func runDefaultsCommand(with arguments: ProcessArguments) throws -> DefaultsResult {
+    private func runDefaultsCommand(with arguments: [String]) throws -> DefaultsResult {
         let task = Process()
         
         task.executableURL = defaultsUrl
@@ -122,4 +100,5 @@ class FontSmoothingDefaults {
         
         let result = DefaultsResult(output: output, error: error)
         return result
-    }}
+    }
+}

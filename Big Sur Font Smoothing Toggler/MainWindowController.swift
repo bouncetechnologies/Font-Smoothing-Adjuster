@@ -9,8 +9,10 @@ import Cocoa
 import os.log
 
 class MainWindowController: NSWindowController {
-    
-    @IBOutlet weak var toggleSwitch: NSSwitch!
+    @IBOutlet weak var disabledFontSmoothingRadioButton: NSButton!
+    @IBOutlet weak var lightFontSmoothingRadioButton: NSButton!
+    @IBOutlet weak var mediumFontSmoothingRadioButton: NSButton!
+    @IBOutlet weak var heavyFontSmoothingRadioButton: NSButton!
     
     let fontSmoothingDefaults = FontSmoothingDefaults()
     
@@ -21,30 +23,88 @@ class MainWindowController: NSWindowController {
     override func windowDidLoad() {
         super.windowDidLoad()
 
+        setRadioButtonsToCurrentDefaultsState()
+    }
+    
+    func setRadioButtonsToCurrentDefaultsState() {
         do {
-            let isFontSmoothingEnabled = try fontSmoothingDefaults.isFontSmoothingEnabled()
-            toggleSwitch.state = isFontSmoothingEnabled ? .on : .off
+            let fontSmoothingState = try fontSmoothingDefaults.getFontSmoothingState()
+            switch fontSmoothingState {
+            case .noFontSmoothing:
+                disabledFontSmoothingRadioButton.state = .on
+            case .lightFontSmoothing:
+                lightFontSmoothingRadioButton.state = .on
+            case .mediumFontSmoothing:
+                mediumFontSmoothingRadioButton.state = .on
+            case .heavyFontSmoothing:
+                heavyFontSmoothingRadioButton.state = .on
+            case .defaultFontSmoothing:
+                mediumFontSmoothingRadioButton.state = .on
+            }
         } catch {
+            os_log(.error, "Error getting font smoothing defaults: %s", error.localizedDescription)
+            presentErrorSheet(error)
+        }
+            
+    }
+    
+    @IBAction func toggleFontSmoothing(_ sender: NSButton) {
+        let fontSmoothingOption: FontSmoothingDefaults.FontSmoothingOptions
+        switch sender {
+        case disabledFontSmoothingRadioButton:
+            fontSmoothingOption = .noFontSmoothing
+        case lightFontSmoothingRadioButton:
+            fontSmoothingOption = .lightFontSmoothing
+        case mediumFontSmoothingRadioButton:
+            fontSmoothingOption = .mediumFontSmoothing
+        case heavyFontSmoothingRadioButton:
+            fontSmoothingOption = .heavyFontSmoothing
+        default:
+            fatalError("Unsupported font smoothing radio button option selected.")
+        }
+        do {
+            try fontSmoothingDefaults.setFontSmoothing(option: fontSmoothingOption)
+            presentSuccessSheet()
+        } catch {
+            // Revert toggle switch state because error occurred.
+            setRadioButtonsToCurrentDefaultsState()
             os_log(.error, "Error setting font smoothing defaults: %s", error.localizedDescription)
             presentErrorSheet(error)
         }
     }
     
-    @IBAction func toggleFontSmoothing(_ sender: NSSwitch) {
-        do {
-            switch toggleSwitch.state {
-            case .on:
-                try fontSmoothingDefaults.enableFontSmoothing()
-            case .off:
-                try fontSmoothingDefaults.disableFontSmoothing()
+    func presentSuccessSheet() {
+        guard let window = self.window else { return }
+        let alert = NSAlert()
+        alert.messageText = "Font smoothing preferences successfully updated"
+        alert.informativeText = "Log off or restart your computer for the changes to take effect."
+        alert.addButton(withTitle: "Log out now")
+        alert.addButton(withTitle: "Log out later")
+        alert.alertStyle = .informational
+        alert.beginSheetModal(for: window) { (response) in
+            switch response {
+            case .alertFirstButtonReturn:
+                print("First button")
+                let source = """
+                tell application "System Events"
+
+                    log out
+
+                end tell
+                """
+                
+                guard let script = NSAppleScript(source: source) else { return }
+                var error: NSDictionary?
+                script.executeAndReturnError(&error)
+                if let error = error {
+                    print(error)
+                    os_log(.error, "Error logging out user")
+                }
+            case .alertSecondButtonReturn:
+                print("Second button")
             default:
-                fatalError("Unsupported toggle switch state.")
+                fatalError("Unsupported action taken on success sheet.")
             }
-        } catch {
-            // Revert toggle switch state because error occurred.
-            toggleSwitch.state = toggleSwitch.state == .on ? .off : .on
-            os_log(.error, "Error setting font smoothing defaults: %s", error.localizedDescription)
-            presentErrorSheet(error)
         }
     }
     
@@ -56,5 +116,4 @@ class MainWindowController: NSWindowController {
         alert.alertStyle = .critical
         alert.beginSheetModal(for: window)
     }
-    
 }

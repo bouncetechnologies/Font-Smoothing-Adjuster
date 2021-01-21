@@ -26,5 +26,7 @@
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>This is so that the app can log you out of your Mac to make font smoothing changes take effect.</string>
 </dict>
 </plist>
