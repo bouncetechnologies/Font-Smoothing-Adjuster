@@ -26,7 +26,7 @@ class Big_Sur_Font_Smoothing_TogglerUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         let value = initialState!.output.split(separator: "\n")[0]
         let arguments = ["-currentHost", "write", "-g", "AppleFontSmoothing", "-int", "\(value)"]
-        let result = try! runDefaultsCommand(with: arguments)
+        let _ = try! runDefaultsCommand(with: arguments)
     }
 
     func testExample() throws {

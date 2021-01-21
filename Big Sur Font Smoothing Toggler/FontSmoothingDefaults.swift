@@ -80,28 +80,6 @@ class FontSmoothingDefaults {
         }
     }
     
-    func isFontSmoothingEnabled() throws -> Bool {
-        do {
-            let result = try runDefaultsCommand(with: getFontSmoothingStateArguments)
-            
-            if result.output == "0\n" {
-                return false
-            }
-            
-            if result.output.contains(domainDefaultPairDoesNotExistText) || result.error.contains(domainDefaultPairDoesNotExistText) {
-                return true
-            }
-            
-            throw FontSmoothingDefaultsError.unknownError
-        } catch {
-            if error.localizedDescription.contains(domainDefaultPairDoesNotExistText) {
-                return true
-            } else {
-                throw error
-            }
-        }
-    }
-    
     private func runDefaultsCommand(with arguments: ProcessArguments) throws -> DefaultsResult {
         let task = Process()
         
