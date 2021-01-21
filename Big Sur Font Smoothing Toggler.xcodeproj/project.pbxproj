@@ -47,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5317826325B9E99A002AA453 /* Big_Sur_Font_Smoothing_TogglerUITests.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Big_Sur_Font_Smoothing_TogglerUITests.entitlements; sourceTree = "<group>"; };
 		5350902F2562BD94005CCD39 /* Big Sur Font Smoothing Toggler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Big Sur Font Smoothing Toggler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		535090322562BD94005CCD39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		535090342562BD95005CCD39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -141,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				5350904E2562BD95005CCD39 /* Big_Sur_Font_Smoothing_TogglerUITests.swift */,
+				5317826325B9E99A002AA453 /* Big_Sur_Font_Smoothing_TogglerUITests.entitlements */,
 				535090502562BD95005CCD39 /* Info.plist */,
 			);
 			path = "Big Sur Font Smoothing TogglerUITests";
@@ -461,7 +463,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4YNZUF26AM;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = "Big Sur Font Smoothing Toggler/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -482,7 +484,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4YNZUF26AM;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = "Big Sur Font Smoothing Toggler/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -542,6 +544,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Big Sur Font Smoothing TogglerUITests/Big_Sur_Font_Smoothing_TogglerUITests.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4YNZUF26AM;
@@ -562,6 +565,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Big Sur Font Smoothing TogglerUITests/Big_Sur_Font_Smoothing_TogglerUITests.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4YNZUF26AM;

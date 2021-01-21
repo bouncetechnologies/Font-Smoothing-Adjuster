@@ -62,6 +62,10 @@ class FontSmoothingDefaults {
     func getFontSmoothingState() throws -> FontSmoothingOptions {
         let result = try runDefaultsCommand(with: getFontSmoothingStateArguments)
         
+        if result.error.contains(domainDefaultPairDoesNotExistText) {
+            return .defaultFontSmoothing
+        }
+        
         switch result.output {
         case "0\n":
             return .noFontSmoothing
@@ -71,8 +75,6 @@ class FontSmoothingDefaults {
             return .mediumFontSmoothing
         case "3\n":
             return .heavyFontSmoothing
-        case domainDefaultPairDoesNotExistText:
-            return .defaultFontSmoothing
         default:
             throw FontSmoothingDefaultsError.unknownError
         }
@@ -122,4 +124,5 @@ class FontSmoothingDefaults {
         
         let result = DefaultsResult(output: output, error: error)
         return result
-    }}
+    }
+}

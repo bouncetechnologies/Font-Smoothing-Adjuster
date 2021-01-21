@@ -24,21 +24,21 @@
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="875"/>
             <view key="contentView" id="se5-gp-TjO">
                 <rect key="frame" x="0.0" y="0.0" width="417" height="203"/>
-                <autoresizingMask key="autoresizingMask"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="6" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xCM-7O-UeI">
-                        <rect key="frame" x="41" y="61" width="335" height="82"/>
+                        <rect key="frame" x="92" y="61" width="233" height="82"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vBp-SU-VGI">
-                                <rect key="frame" x="-2" y="66" width="205" height="16"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Font smoothing (when available):" id="3bW-X9-caa">
+                                <rect key="frame" x="-2" y="66" width="103" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Font smoothing:" id="3bW-X9-caa">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="6" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U7t-9F-cvi">
-                                <rect key="frame" x="207" y="0.0" width="128" height="82"/>
+                                <rect key="frame" x="105" y="0.0" width="128" height="82"/>
                                 <subviews>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yAH-xX-66R">
                                         <rect key="frame" x="-2" y="65" width="79" height="18"/>
@@ -71,8 +71,8 @@
                                         </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bnW-ud-KsD">
-                                        <rect key="frame" x="-2" y="-1" width="67" height="18"/>
-                                        <buttonCell key="cell" type="radio" title="Strong" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="cd3-89-pg3">
+                                        <rect key="frame" x="-2" y="-1" width="64" height="18"/>
+                                        <buttonCell key="cell" type="radio" title="Heavy" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="cd3-89-pg3">
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
