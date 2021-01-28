@@ -28,5 +28,7 @@
 	<string>NSApplication</string>
 	<key>NSAppleEventsUsageDescription</key>
 	<string>This is so that the app can log you out of your Mac to make font smoothing changes take effect.</string>
+    <key>SUPublicEDKey</key>
+    <string>fVvd9HHLM0mFRl0j+t4OU42RN17KqKtDDNB11PfMHBQ=</string>
 </dict>
 </plist>
