@@ -24,6 +24,8 @@
 		535090842562DE10005CCD39 /* FontSmoothingDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535090832562DE10005CCD39 /* FontSmoothingDefaults.swift */; };
 		535090852562DE10005CCD39 /* FontSmoothingDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535090832562DE10005CCD39 /* FontSmoothingDefaults.swift */; };
 		535090862562DE10005CCD39 /* FontSmoothingDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535090832562DE10005CCD39 /* FontSmoothingDefaults.swift */; };
+		9308ED3925C32444008EC774 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9308ED3825C32444008EC774 /* Sparkle.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		9308ED3C25C3245C008EC774 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9308ED3825C32444008EC774 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		937ED7A425C31D01009FC993 /* AppCenterCrashes in Frameworks */ = {isa = PBXBuildFile; productRef = 937ED7A325C31D01009FC993 /* AppCenterCrashes */; };
 		937ED7A625C31D01009FC993 /* AppCenterAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 937ED7A525C31D01009FC993 /* AppCenterAnalytics */; };
 /* End PBXBuildFile section */
@@ -45,6 +47,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9308ED3025C32354008EC774 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9308ED3C25C3245C008EC774 /* Sparkle.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5317826325B9E99A002AA453 /* Big_Sur_Font_Smoothing_TogglerUITests.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Big_Sur_Font_Smoothing_TogglerUITests.entitlements; sourceTree = "<group>"; };
 		5350902F2562BD94005CCD39 /* Big Sur Font Smoothing Toggler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Big Sur Font Smoothing Toggler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +79,7 @@
 		535090622562BE80005CCD39 /* MainWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
 		5350906C2562BEF0005CCD39 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		535090832562DE10005CCD39 /* FontSmoothingDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSmoothingDefaults.swift; sourceTree = "<group>"; };
+		9308ED3825C32444008EC774 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +88,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				937ED7A625C31D01009FC993 /* AppCenterAnalytics in Frameworks */,
+				9308ED3925C32444008EC774 /* Sparkle.framework in Frameworks */,
 				937ED7A425C31D01009FC993 /* AppCenterCrashes in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +117,7 @@
 				535090422562BD95005CCD39 /* Big Sur Font Smoothing TogglerTests */,
 				5350904D2562BD95005CCD39 /* Big Sur Font Smoothing TogglerUITests */,
 				535090302562BD94005CCD39 /* Products */,
+				9308ED2325C322EB008EC774 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +166,14 @@
 			path = "Big Sur Font Smoothing TogglerUITests";
 			sourceTree = "<group>";
 		};
+		9308ED2325C322EB008EC774 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9308ED3825C32444008EC774 /* Sparkle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,6 +184,7 @@
 				5350902B2562BD94005CCD39 /* Sources */,
 				5350902C2562BD94005CCD39 /* Frameworks */,
 				5350902D2562BD94005CCD39 /* Resources */,
+				9308ED3025C32354008EC774 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -467,6 +495,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4YNZUF26AM;
 				ENABLE_HARDENED_RUNTIME = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Big Sur Font Smoothing Toggler/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -488,6 +520,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 4YNZUF26AM;
 				ENABLE_HARDENED_RUNTIME = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Big Sur Font Smoothing Toggler/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
