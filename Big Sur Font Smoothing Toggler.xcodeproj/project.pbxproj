@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,8 @@
 		535090842562DE10005CCD39 /* FontSmoothingDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535090832562DE10005CCD39 /* FontSmoothingDefaults.swift */; };
 		535090852562DE10005CCD39 /* FontSmoothingDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535090832562DE10005CCD39 /* FontSmoothingDefaults.swift */; };
 		535090862562DE10005CCD39 /* FontSmoothingDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535090832562DE10005CCD39 /* FontSmoothingDefaults.swift */; };
+		937ED7A425C31D01009FC993 /* AppCenterCrashes in Frameworks */ = {isa = PBXBuildFile; productRef = 937ED7A325C31D01009FC993 /* AppCenterCrashes */; };
+		937ED7A625C31D01009FC993 /* AppCenterAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 937ED7A525C31D01009FC993 /* AppCenterAnalytics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				937ED7A625C31D01009FC993 /* AppCenterAnalytics in Frameworks */,
+				937ED7A425C31D01009FC993 /* AppCenterCrashes in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +163,10 @@
 			dependencies = (
 			);
 			name = "Big Sur Font Smoothing Toggler";
+			packageProductDependencies = (
+				937ED7A325C31D01009FC993 /* AppCenterCrashes */,
+				937ED7A525C31D01009FC993 /* AppCenterAnalytics */,
+			);
 			productName = "Big Sur Font Smoothing Toggler";
 			productReference = 5350902F2562BD94005CCD39 /* Big Sur Font Smoothing Toggler.app */;
 			productType = "com.apple.product-type.application";
@@ -230,6 +238,9 @@
 				Base,
 			);
 			mainGroup = 535090262562BD94005CCD39;
+			packageReferences = (
+				937ED7A225C31D01009FC993 /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */,
+			);
 			productRefGroup = 535090302562BD94005CCD39 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -614,6 +625,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		937ED7A225C31D01009FC993 /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/microsoft/appcenter-sdk-apple.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		937ED7A325C31D01009FC993 /* AppCenterCrashes */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 937ED7A225C31D01009FC993 /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */;
+			productName = AppCenterCrashes;
+		};
+		937ED7A525C31D01009FC993 /* AppCenterAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 937ED7A225C31D01009FC993 /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */;
+			productName = AppCenterAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 535090272562BD94005CCD39 /* Project object */;
 }
