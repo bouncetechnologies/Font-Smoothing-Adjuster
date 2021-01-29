@@ -63,16 +63,16 @@
 
 /* Begin PBXFileReference section */
 		5317826325B9E99A002AA453 /* Big_Sur_Font_Smoothing_TogglerUITests.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Big_Sur_Font_Smoothing_TogglerUITests.entitlements; sourceTree = "<group>"; };
-		5350902F2562BD94005CCD39 /* Big Sur Font Smoothing Toggler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Big Sur Font Smoothing Toggler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5350902F2562BD94005CCD39 /* Font Smoothing Adjuster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Font Smoothing Adjuster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		535090322562BD94005CCD39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		535090342562BD95005CCD39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		535090372562BD95005CCD39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		535090392562BD95005CCD39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5350903A2562BD95005CCD39 /* Big_Sur_Font_Smoothing_Toggler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Big_Sur_Font_Smoothing_Toggler.entitlements; sourceTree = "<group>"; };
-		5350903F2562BD95005CCD39 /* Big Sur Font Smoothing TogglerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Big Sur Font Smoothing TogglerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5350903F2562BD95005CCD39 /* Font Smoothing AdjusterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Font Smoothing AdjusterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		535090432562BD95005CCD39 /* Big_Sur_Font_Smoothing_TogglerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Big_Sur_Font_Smoothing_TogglerTests.swift; sourceTree = "<group>"; };
 		535090452562BD95005CCD39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5350904A2562BD95005CCD39 /* Big Sur Font Smoothing TogglerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Big Sur Font Smoothing TogglerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5350904A2562BD95005CCD39 /* Font Smoothing AdjusterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Font Smoothing AdjusterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5350904E2562BD95005CCD39 /* Big_Sur_Font_Smoothing_TogglerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Big_Sur_Font_Smoothing_TogglerUITests.swift; sourceTree = "<group>"; };
 		535090502562BD95005CCD39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		535090612562BE80005CCD39 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
@@ -124,9 +124,9 @@
 		535090302562BD94005CCD39 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5350902F2562BD94005CCD39 /* Big Sur Font Smoothing Toggler.app */,
-				5350903F2562BD95005CCD39 /* Big Sur Font Smoothing TogglerTests.xctest */,
-				5350904A2562BD95005CCD39 /* Big Sur Font Smoothing TogglerUITests.xctest */,
+				5350902F2562BD94005CCD39 /* Font Smoothing Adjuster.app */,
+				5350903F2562BD95005CCD39 /* Font Smoothing AdjusterTests.xctest */,
+				5350904A2562BD95005CCD39 /* Font Smoothing AdjusterUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,9 +177,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5350902E2562BD94005CCD39 /* Big Sur Font Smoothing Toggler */ = {
+		5350902E2562BD94005CCD39 /* Font Smoothing Adjuster */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 535090532562BD95005CCD39 /* Build configuration list for PBXNativeTarget "Big Sur Font Smoothing Toggler" */;
+			buildConfigurationList = 535090532562BD95005CCD39 /* Build configuration list for PBXNativeTarget "Font Smoothing Adjuster" */;
 			buildPhases = (
 				5350902B2562BD94005CCD39 /* Sources */,
 				5350902C2562BD94005CCD39 /* Frameworks */,
@@ -190,18 +190,18 @@
 			);
 			dependencies = (
 			);
-			name = "Big Sur Font Smoothing Toggler";
+			name = "Font Smoothing Adjuster";
 			packageProductDependencies = (
 				937ED7A325C31D01009FC993 /* AppCenterCrashes */,
 				937ED7A525C31D01009FC993 /* AppCenterAnalytics */,
 			);
 			productName = "Big Sur Font Smoothing Toggler";
-			productReference = 5350902F2562BD94005CCD39 /* Big Sur Font Smoothing Toggler.app */;
+			productReference = 5350902F2562BD94005CCD39 /* Font Smoothing Adjuster.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5350903E2562BD95005CCD39 /* Big Sur Font Smoothing TogglerTests */ = {
+		5350903E2562BD95005CCD39 /* Font Smoothing AdjusterTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 535090562562BD95005CCD39 /* Build configuration list for PBXNativeTarget "Big Sur Font Smoothing TogglerTests" */;
+			buildConfigurationList = 535090562562BD95005CCD39 /* Build configuration list for PBXNativeTarget "Font Smoothing AdjusterTests" */;
 			buildPhases = (
 				5350903B2562BD95005CCD39 /* Sources */,
 				5350903C2562BD95005CCD39 /* Frameworks */,
@@ -212,14 +212,14 @@
 			dependencies = (
 				535090412562BD95005CCD39 /* PBXTargetDependency */,
 			);
-			name = "Big Sur Font Smoothing TogglerTests";
+			name = "Font Smoothing AdjusterTests";
 			productName = "Big Sur Font Smoothing TogglerTests";
-			productReference = 5350903F2562BD95005CCD39 /* Big Sur Font Smoothing TogglerTests.xctest */;
+			productReference = 5350903F2562BD95005CCD39 /* Font Smoothing AdjusterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		535090492562BD95005CCD39 /* Big Sur Font Smoothing TogglerUITests */ = {
+		535090492562BD95005CCD39 /* Font Smoothing AdjusterUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 535090592562BD95005CCD39 /* Build configuration list for PBXNativeTarget "Big Sur Font Smoothing TogglerUITests" */;
+			buildConfigurationList = 535090592562BD95005CCD39 /* Build configuration list for PBXNativeTarget "Font Smoothing AdjusterUITests" */;
 			buildPhases = (
 				535090462562BD95005CCD39 /* Sources */,
 				535090472562BD95005CCD39 /* Frameworks */,
@@ -230,9 +230,9 @@
 			dependencies = (
 				5350904C2562BD95005CCD39 /* PBXTargetDependency */,
 			);
-			name = "Big Sur Font Smoothing TogglerUITests";
+			name = "Font Smoothing AdjusterUITests";
 			productName = "Big Sur Font Smoothing TogglerUITests";
-			productReference = 5350904A2562BD95005CCD39 /* Big Sur Font Smoothing TogglerUITests.xctest */;
+			productReference = 5350904A2562BD95005CCD39 /* Font Smoothing AdjusterUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -257,7 +257,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5350902A2562BD94005CCD39 /* Build configuration list for PBXProject "Big Sur Font Smoothing Toggler" */;
+			buildConfigurationList = 5350902A2562BD94005CCD39 /* Build configuration list for PBXProject "Font Smoothing Adjuster" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -273,9 +273,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5350902E2562BD94005CCD39 /* Big Sur Font Smoothing Toggler */,
-				5350903E2562BD95005CCD39 /* Big Sur Font Smoothing TogglerTests */,
-				535090492562BD95005CCD39 /* Big Sur Font Smoothing TogglerUITests */,
+				5350902E2562BD94005CCD39 /* Font Smoothing Adjuster */,
+				5350903E2562BD95005CCD39 /* Font Smoothing AdjusterTests */,
+				535090492562BD95005CCD39 /* Font Smoothing AdjusterUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -348,12 +348,12 @@
 /* Begin PBXTargetDependency section */
 		535090412562BD95005CCD39 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5350902E2562BD94005CCD39 /* Big Sur Font Smoothing Toggler */;
+			target = 5350902E2562BD94005CCD39 /* Font Smoothing Adjuster */;
 			targetProxy = 535090402562BD95005CCD39 /* PBXContainerItemProxy */;
 		};
 		5350904C2562BD95005CCD39 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5350902E2562BD94005CCD39 /* Big Sur Font Smoothing Toggler */;
+			target = 5350902E2562BD94005CCD39 /* Font Smoothing Adjuster */;
 			targetProxy = 5350904B2562BD95005CCD39 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -493,8 +493,9 @@
 				CODE_SIGN_ENTITLEMENTS = "Big Sur Font Smoothing Toggler/Big_Sur_Font_Smoothing_Toggler.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 0.2;
 				DEVELOPMENT_TEAM = 4YNZUF26AM;
-				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -504,7 +505,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bouncetechnologies.Big-Sur-Font-Smoothing-Toggler";
+				MARKETING_VERSION = 0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bouncetechnologies.Font-Smoothing-Adjuster";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -518,8 +520,9 @@
 				CODE_SIGN_ENTITLEMENTS = "Big Sur Font Smoothing Toggler/Big_Sur_Font_Smoothing_Toggler.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 0.2;
 				DEVELOPMENT_TEAM = 4YNZUF26AM;
-				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -529,7 +532,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bouncetechnologies.Big-Sur-Font-Smoothing-Toggler";
+				MARKETING_VERSION = 0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bouncetechnologies.Font-Smoothing-Adjuster";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -553,7 +557,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bouncetechnologies.Big-Sur-Font-Smoothing-TogglerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Big Sur Font Smoothing Toggler.app/Contents/MacOS/Big Sur Font Smoothing Toggler";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Font Smoothing Adjuster.app/Contents/MacOS/Font Smoothing Adjuster";
 			};
 			name = Debug;
 		};
@@ -575,7 +579,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bouncetechnologies.Big-Sur-Font-Smoothing-TogglerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Big Sur Font Smoothing Toggler.app/Contents/MacOS/Big Sur Font Smoothing Toggler";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Font Smoothing Adjuster.app/Contents/MacOS/Font Smoothing Adjuster";
 			};
 			name = Release;
 		};
@@ -624,7 +628,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5350902A2562BD94005CCD39 /* Build configuration list for PBXProject "Big Sur Font Smoothing Toggler" */ = {
+		5350902A2562BD94005CCD39 /* Build configuration list for PBXProject "Font Smoothing Adjuster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				535090512562BD95005CCD39 /* Debug */,
@@ -633,7 +637,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		535090532562BD95005CCD39 /* Build configuration list for PBXNativeTarget "Big Sur Font Smoothing Toggler" */ = {
+		535090532562BD95005CCD39 /* Build configuration list for PBXNativeTarget "Font Smoothing Adjuster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				535090542562BD95005CCD39 /* Debug */,
@@ -642,7 +646,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		535090562562BD95005CCD39 /* Build configuration list for PBXNativeTarget "Big Sur Font Smoothing TogglerTests" */ = {
+		535090562562BD95005CCD39 /* Build configuration list for PBXNativeTarget "Font Smoothing AdjusterTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				535090572562BD95005CCD39 /* Debug */,
@@ -651,7 +655,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		535090592562BD95005CCD39 /* Build configuration list for PBXNativeTarget "Big Sur Font Smoothing TogglerUITests" */ = {
+		535090592562BD95005CCD39 /* Build configuration list for PBXNativeTarget "Font Smoothing AdjusterUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5350905A2562BD95005CCD39 /* Debug */,

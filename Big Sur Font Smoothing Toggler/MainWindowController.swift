@@ -84,7 +84,6 @@ class MainWindowController: NSWindowController {
         alert.beginSheetModal(for: window) { (response) in
             switch response {
             case .alertFirstButtonReturn:
-                print("First button")
                 let source = """
                 tell application "System Events"
 
@@ -101,7 +100,7 @@ class MainWindowController: NSWindowController {
                     os_log(.error, "Error logging out user")
                 }
             case .alertSecondButtonReturn:
-                print("Second button")
+                return
             default:
                 fatalError("Unsupported action taken on success sheet.")
             }

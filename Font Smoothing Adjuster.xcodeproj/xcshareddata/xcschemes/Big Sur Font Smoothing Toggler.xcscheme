@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5350902E2562BD94005CCD39"
-               BuildableName = "Big Sur Font Smoothing Toggler.app"
-               BlueprintName = "Big Sur Font Smoothing Toggler"
-               ReferencedContainer = "container:Big Sur Font Smoothing Toggler.xcodeproj">
+               BuildableName = "Font Smoothing Adjuster.app"
+               BlueprintName = "Font Smoothing Adjuster"
+               ReferencedContainer = "container:Font Smoothing Adjuster.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,9 +34,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5350903E2562BD95005CCD39"
-               BuildableName = "Big Sur Font Smoothing TogglerTests.xctest"
-               BlueprintName = "Big Sur Font Smoothing TogglerTests"
-               ReferencedContainer = "container:Big Sur Font Smoothing Toggler.xcodeproj">
+               BuildableName = "Font Smoothing AdjusterTests.xctest"
+               BlueprintName = "Font Smoothing AdjusterTests"
+               ReferencedContainer = "container:Font Smoothing Adjuster.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -44,9 +44,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "535090492562BD95005CCD39"
-               BuildableName = "Big Sur Font Smoothing TogglerUITests.xctest"
-               BlueprintName = "Big Sur Font Smoothing TogglerUITests"
-               ReferencedContainer = "container:Big Sur Font Smoothing Toggler.xcodeproj">
+               BuildableName = "Font Smoothing AdjusterUITests.xctest"
+               BlueprintName = "Font Smoothing AdjusterUITests"
+               ReferencedContainer = "container:Font Smoothing Adjuster.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5350902E2562BD94005CCD39"
-            BuildableName = "Big Sur Font Smoothing Toggler.app"
-            BlueprintName = "Big Sur Font Smoothing Toggler"
-            ReferencedContainer = "container:Big Sur Font Smoothing Toggler.xcodeproj">
+            BuildableName = "Font Smoothing Adjuster.app"
+            BlueprintName = "Font Smoothing Adjuster"
+            ReferencedContainer = "container:Font Smoothing Adjuster.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -83,9 +83,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5350902E2562BD94005CCD39"
-            BuildableName = "Big Sur Font Smoothing Toggler.app"
-            BlueprintName = "Big Sur Font Smoothing Toggler"
-            ReferencedContainer = "container:Big Sur Font Smoothing Toggler.xcodeproj">
+            BuildableName = "Font Smoothing Adjuster.app"
+            BlueprintName = "Font Smoothing Adjuster"
+            ReferencedContainer = "container:Font Smoothing Adjuster.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

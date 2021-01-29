@@ -17,18 +17,22 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.utilities</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>This is so that the app can log you out of your Mac to make font smoothing changes take effect.</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
-	<key>NSAppleEventsUsageDescription</key>
-	<string>This is so that the app can log you out of your Mac to make font smoothing changes take effect.</string>
-    <key>SUPublicEDKey</key>
-    <string>fVvd9HHLM0mFRl0j+t4OU42RN17KqKtDDNB11PfMHBQ=</string>
+	<key>SUFeedURL</key>
+	<string>https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/appcast.xml</string>
+	<key>SUPublicEDKey</key>
+	<string>FCO6Qre2l7PzuLxX/b70PVS2EtZQ7VyJkEgOZzKQ7FA=</string>
 </dict>
 </plist>
