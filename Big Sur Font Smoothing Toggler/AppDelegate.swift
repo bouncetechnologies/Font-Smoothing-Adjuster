@@ -20,9 +20,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         mainWindowController.showWindow(self)
         self.mainWindowController = mainWindowController
         
-        #if RELEASE
         AppCenter.start(withAppSecret: AppCenterConfig.secret, services: [Analytics.self, Crashes.self])
-        #endif
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
