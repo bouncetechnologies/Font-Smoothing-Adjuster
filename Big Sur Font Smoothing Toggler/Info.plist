@@ -34,5 +34,7 @@
 	<string>https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/appcast.xml</string>
 	<key>SUPublicEDKey</key>
 	<string>FCO6Qre2l7PzuLxX/b70PVS2EtZQ7VyJkEgOZzKQ7FA=</string>
+	<key>APP_CENTER_SECRET</key>
+	<string>$(APP_CENTER_SECRET)</string>
 </dict>
 </plist>

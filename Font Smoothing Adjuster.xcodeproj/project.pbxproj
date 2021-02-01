@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		533B9D2125C8428500EB561A /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533B9D2025C8428500EB561A /* Config.swift */; };
 		535090332562BD94005CCD39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535090322562BD94005CCD39 /* AppDelegate.swift */; };
 		535090352562BD95005CCD39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 535090342562BD95005CCD39 /* Assets.xcassets */; };
 		535090382562BD95005CCD39 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 535090362562BD95005CCD39 /* MainMenu.xib */; };
@@ -63,6 +64,8 @@
 
 /* Begin PBXFileReference section */
 		5317826325B9E99A002AA453 /* Big_Sur_Font_Smoothing_TogglerUITests.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Big_Sur_Font_Smoothing_TogglerUITests.entitlements; sourceTree = "<group>"; };
+		533B9D1F25C8421E00EB561A /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		533B9D2025C8428500EB561A /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		5350902F2562BD94005CCD39 /* Font Smoothing Adjuster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Font Smoothing Adjuster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		535090322562BD94005CCD39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		535090342562BD95005CCD39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -136,6 +139,8 @@
 			children = (
 				535090322562BD94005CCD39 /* AppDelegate.swift */,
 				535090612562BE80005CCD39 /* MainWindowController.swift */,
+				533B9D2025C8428500EB561A /* Config.swift */,
+				533B9D1F25C8421E00EB561A /* Config.xcconfig */,
 				535090832562DE10005CCD39 /* FontSmoothingDefaults.swift */,
 				5350906C2562BEF0005CCD39 /* Extensions.swift */,
 				535090622562BE80005CCD39 /* MainWindowController.xib */,
@@ -316,6 +321,7 @@
 			files = (
 				535090632562BE80005CCD39 /* MainWindowController.swift in Sources */,
 				535090842562DE10005CCD39 /* FontSmoothingDefaults.swift in Sources */,
+				533B9D2125C8428500EB561A /* Config.swift in Sources */,
 				5350906D2562BEF0005CCD39 /* Extensions.swift in Sources */,
 				535090332562BD94005CCD39 /* AppDelegate.swift in Sources */,
 			);
@@ -372,6 +378,7 @@
 /* Begin XCBuildConfiguration section */
 		535090512562BD95005CCD39 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 533B9D1F25C8421E00EB561A /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -433,6 +440,7 @@
 		};
 		535090522562BD95005CCD39 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 533B9D1F25C8421E00EB561A /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
