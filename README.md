@@ -29,16 +29,21 @@ Absolutely. If you’re comfortable using a terminal, you can also use the follo
 Make sure you have Xcode installed and set up on your machine.
 
 1. Clone the project:
+
 ```git clone https://github.com/bouncetechnologies/Font-Smoothing-Adjuster.git```
 
 2. Navigate to the project directory and open the Xcode project:
+
 ```cd Font-Smoothing-Adjuster```
+
 ```open "Font Smoothing Adjuster.xcodeproj"```
 
 3.  Set your development team in the Signing & Capabilities section of the Font Smoothing Adjuster target.
 
 4. Build and run the project
+
 Select Product -> Run from the menu, or press ⌘R
 
 5. Run the tests
+
 Select Product -> Test from the menu, or press ⌘U
