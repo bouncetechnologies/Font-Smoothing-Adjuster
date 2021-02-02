@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import Big_Sur_Font_Smoothing_Toggler
+@testable import Font_Smoothing_Adjuster
 
 class Big_Sur_Font_Smoothing_TogglerTests: XCTestCase {
 

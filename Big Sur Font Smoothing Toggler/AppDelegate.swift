@@ -6,6 +6,9 @@
 //
 
 import Cocoa
+import AppCenter
+import AppCenterAnalytics
+import AppCenterCrashes
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -16,6 +19,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let mainWindowController = MainWindowController()
         mainWindowController.showWindow(self)
         self.mainWindowController = mainWindowController
+        
+        #if !DEBUG
+        AppCenter.start(withAppSecret: AppCenterConfig.secret, services: [Analytics.self, Crashes.self])
+        #endif
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

@@ -7,6 +7,7 @@
 
 import Cocoa
 import os.log
+import AppCenterAnalytics
 
 class MainWindowController: NSWindowController {
     @IBOutlet weak var disabledFontSmoothingRadioButton: NSButton!
@@ -43,6 +44,7 @@ class MainWindowController: NSWindowController {
             }
         } catch {
             os_log(.error, "Error getting font smoothing defaults: %s", error.localizedDescription)
+            Analytics.trackEvent("Error getting font smoothing defaults: \(error.localizedDescription)")
             presentErrorSheet(error)
         }
             
@@ -60,15 +62,22 @@ class MainWindowController: NSWindowController {
         case heavyFontSmoothingRadioButton:
             fontSmoothingOption = .heavyFontSmoothing
         default:
+            Analytics.trackEvent("Unsupported font smoothing radio button option selected")
             fatalError("Unsupported font smoothing radio button option selected.")
         }
         do {
+            let fontSmoothingState = try fontSmoothingDefaults.getFontSmoothingState()
+            guard fontSmoothingOption != fontSmoothingState else {
+                return
+            }
             try fontSmoothingDefaults.setFontSmoothing(option: fontSmoothingOption)
+            Analytics.trackEvent("Font smoothing preferences updated")
             presentSuccessSheet()
         } catch {
             // Revert toggle switch state because error occurred.
             setRadioButtonsToCurrentDefaultsState()
             os_log(.error, "Error setting font smoothing defaults: %s", error.localizedDescription)
+            Analytics.trackEvent("Error setting font smoothing defaults: \(error.localizedDescription)")
             presentErrorSheet(error)
         }
     }
@@ -84,7 +93,6 @@ class MainWindowController: NSWindowController {
         alert.beginSheetModal(for: window) { (response) in
             switch response {
             case .alertFirstButtonReturn:
-                print("First button")
                 let source = """
                 tell application "System Events"
 
@@ -99,10 +107,12 @@ class MainWindowController: NSWindowController {
                 if let error = error {
                     print(error)
                     os_log(.error, "Error logging out user")
+                    Analytics.trackEvent("Error logging out user")
                 }
             case .alertSecondButtonReturn:
-                print("Second button")
+                return
             default:
+                Analytics.trackEvent("Unsupported action taken on success sheet.")
                 fatalError("Unsupported action taken on success sheet.")
             }
         }
