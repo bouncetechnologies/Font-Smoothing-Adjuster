@@ -29,7 +29,7 @@ class Big_Sur_Font_Smoothing_TogglerUITests: XCTestCase {
         let _ = try! runDefaultsCommand(with: arguments)
     }
 
-    func testExample() throws {
+    func testUI() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launchArguments = ["enable-testing"]
@@ -38,7 +38,7 @@ class Big_Sur_Font_Smoothing_TogglerUITests: XCTestCase {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
-        let bigSurFontSmoothingTogglerWindow = XCUIApplication().windows["Big Sur Font Smoothing Toggler"]
+        let bigSurFontSmoothingTogglerWindow = XCUIApplication().windows["Font Smoothing Adjuster"]
         bigSurFontSmoothingTogglerWindow.radioButtons["Light"].click()
         let logOutLaterButton = bigSurFontSmoothingTogglerWindow.sheets["alert"].buttons["Log out later"]
         logOutLaterButton.click()

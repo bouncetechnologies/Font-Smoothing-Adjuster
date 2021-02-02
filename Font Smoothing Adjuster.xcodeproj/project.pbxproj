@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		533B9D2125C8428500EB561A /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533B9D2025C8428500EB561A /* Config.swift */; };
+		533B9D4D25C9AC9800EB561A /* AppCenterAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 533B9D4C25C9AC9800EB561A /* AppCenterAnalytics */; };
 		535090332562BD94005CCD39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535090322562BD94005CCD39 /* AppDelegate.swift */; };
 		535090352562BD95005CCD39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 535090342562BD95005CCD39 /* Assets.xcassets */; };
 		535090382562BD95005CCD39 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 535090362562BD95005CCD39 /* MainMenu.xib */; };
@@ -107,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				533B9D4D25C9AC9800EB561A /* AppCenterAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +238,9 @@
 				5350904C2562BD95005CCD39 /* PBXTargetDependency */,
 			);
 			name = "Font Smoothing AdjusterUITests";
+			packageProductDependencies = (
+				533B9D4C25C9AC9800EB561A /* AppCenterAnalytics */,
+			);
 			productName = "Big Sur Font Smoothing TogglerUITests";
 			productReference = 5350904A2562BD95005CCD39 /* Font Smoothing AdjusterUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -247,7 +252,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1210;
-				LastUpgradeCheck = 1210;
+				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					5350902E2562BD94005CCD39 = {
 						CreatedOnToolsVersion = 12.1;
@@ -499,6 +504,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Big Sur Font Smoothing Toggler/Big_Sur_Font_Smoothing_Toggler.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.0;
@@ -526,6 +532,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Big Sur Font Smoothing Toggler/Big_Sur_Font_Smoothing_Toggler.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1.0;
@@ -608,7 +615,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bouncetechnologies.Big-Sur-Font-Smoothing-TogglerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "Big Sur Font Smoothing Toggler";
+				TEST_HOST = "";
+				TEST_TARGET_NAME = "Font Smoothing Adjuster";
 			};
 			name = Debug;
 		};
@@ -629,7 +637,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bouncetechnologies.Big-Sur-Font-Smoothing-TogglerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "Big Sur Font Smoothing Toggler";
+				TEST_HOST = "";
+				TEST_TARGET_NAME = "Font Smoothing Adjuster";
 			};
 			name = Release;
 		};
@@ -686,6 +695,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		533B9D4C25C9AC9800EB561A /* AppCenterAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 937ED7A225C31D01009FC993 /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */;
+			productName = AppCenterAnalytics;
+		};
 		937ED7A325C31D01009FC993 /* AppCenterCrashes */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 937ED7A225C31D01009FC993 /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */;
