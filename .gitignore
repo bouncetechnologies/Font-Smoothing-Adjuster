@@ -72,5 +72,3 @@ playground.xcworkspace
 ## Gcc Patch
 /*.gcno
 
-## Config
-Big Sur Font Smoothing Toggler/Config.xcconfig
