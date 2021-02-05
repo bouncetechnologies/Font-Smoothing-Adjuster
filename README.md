@@ -47,6 +47,9 @@ Make sure you have Xcode installed and set up on your machine.
 ####  Set your development team
 Update the settings in Signing & Capabilities for the Font Smoothing Adjuster target.
 
+####  Configure Signing Certificate
+Make sure Signing Certificate is set to Development
+
 #### Build and run the project
 
 Select Product -> Run from the menu, or press ⌘R
