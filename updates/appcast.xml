@@ -3,28 +3,36 @@
     <channel>
         <title>Font Smoothing Adjuster</title>
         <item>
-            <title>0.1</title>
-            <pubDate>Fri, 29 Jan 2021 14:26:25 +0000</pubDate>
+            <title>1.0</title>
+            <pubDate>Tue, 02 Feb 2021 16:10:26 +0000</pubDate>
             <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
-            <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster%200.1.dmg" sparkle:version="0.1" sparkle:shortVersionString="0.1" length="1998592" type="application/octet-stream" sparkle:edSignature="/v/SmCmE1RkBbynz4eBk+fIuvJajQAXt0PCN19eGF3tRPl73rSox0sFA36ALh70+0Fo//K/Go7tQj3RmND+2BA=="/>
+            <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster%201.0.dmg" sparkle:version="1.0" sparkle:shortVersionString="1.0" length="1965774" type="application/octet-stream" sparkle:edSignature="Ee9TAMDQoRWovOk3utMQpwSeUPT3RGtLnRTbdd4SQ1OrvcXpg/e9x20HUIFlFzmsrLn36q26JLY+ZQinGxWRDg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster1.0-0.2.delta" sparkle:version="1.0" sparkle:shortVersionString="1.0" sparkle:deltaFrom="0.2" length="206876" type="application/octet-stream" sparkle:edSignature="hhh1apPvAflYqJg/6yLosEXo2evqowOz0jiL3Sp46CNGCIdV+3qVn69mrSRybvt5Tp5D1Qansg57B/7scGItBw=="/>
+                <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster1.0-0.1.delta" sparkle:version="1.0" sparkle:shortVersionString="1.0" sparkle:deltaFrom="0.1" length="212916" type="application/octet-stream" sparkle:edSignature="AN8LTEs4T5mGLgltnE2qUfWAaeoJC6Jl/vaKUBxcLwu8vYYHdySDNtqJC2v7SAK3Ag3hk5p1oXeaIpUAujdBBw=="/>
+            </sparkle:deltas>
         </item>
         <item>
             <title>0.2</title>
             <pubDate>Fri, 29 Jan 2021 14:39:08 +0000</pubDate>
             <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
             <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster%200.2.dmg" sparkle:version="0.2" sparkle:shortVersionString="0.2" length="1998442" type="application/octet-stream" sparkle:edSignature="h/4FTqeTxzyNxlA3tGNK7cR3u6DyknbdULOpUtjt/p8jKfs8GMcz46QgE46ulmGS+0EH2OEnGMGaphd6to54DA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster0.2-0.1.delta" sparkle:version="0.2" sparkle:shortVersionString="0.2" sparkle:deltaFrom="0.1" length="68584" type="application/octet-stream" sparkle:edSignature="3Kw8mnruWmSDRZdf5OoCBXm079nyxNnzzHz7NPJfNcublWEc1+xT4jfuAHeJ/2i45EsdVni5fvZC7Bg7tlp0Dw=="/>
-            </sparkle:deltas>
         </item>
         <item>
-            <title>1.0</title>
-            <pubDate>Tue, 02 Feb 2021 16:10:26 +0000</pubDate>
+            <title>0.1</title>
+            <pubDate>Fri, 29 Jan 2021 14:26:25 +0000</pubDate>
             <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
-            <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster%201.0.dmg" sparkle:version="1.0" sparkle:shortVersionString="1.0" length="1965774" type="application/octet-stream" sparkle:edSignature="Ee9TAMDQoRWovOk3utMQpwSeUPT3RGtLnRTbdd4SQ1OrvcXpg/e9x20HUIFlFzmsrLn36q26JLY+ZQinGxWRDg=="/>
+            <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster%200.1.dmg" sparkle:version="0.1" sparkle:shortVersionString="0.1" length="1998592" type="application/octet-stream" sparkle:edSignature="/v/SmCmE1RkBbynz4eBk+fIuvJajQAXt0PCN19eGF3tRPl73rSox0sFA36ALh70+0Fo//K/Go7tQj3RmND+2BA=="/>
+        </item>
+        <item>
+            <title>1.1</title>
+            <pubDate>Thu, 11 Feb 2021 14:19:37 +0000</pubDate>
+            <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
+            <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster%201.1.dmg" sparkle:version="1.1" sparkle:shortVersionString="1.1" length="1965755" type="application/octet-stream" sparkle:edSignature="bTe93NCsH09Bv06QoKzL40wCMprzmdGporSVGOdSO9GW3CeCkA8jwBL2hK7CkpzlJ+1iMa77h/7n4mRtq2wrDg=="/>
             <sparkle:deltas>
-                <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster1.0-0.1.delta" sparkle:version="1.0" sparkle:shortVersionString="1.0" sparkle:deltaFrom="0.1" length="212916" type="application/octet-stream" sparkle:edSignature="AN8LTEs4T5mGLgltnE2qUfWAaeoJC6Jl/vaKUBxcLwu8vYYHdySDNtqJC2v7SAK3Ag3hk5p1oXeaIpUAujdBBw=="/>
-                <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster1.0-0.2.delta" sparkle:version="1.0" sparkle:shortVersionString="1.0" sparkle:deltaFrom="0.2" length="206876" type="application/octet-stream" sparkle:edSignature="hhh1apPvAflYqJg/6yLosEXo2evqowOz0jiL3Sp46CNGCIdV+3qVn69mrSRybvt5Tp5D1Qansg57B/7scGItBw=="/>
+                <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster1.1-1.0.delta" sparkle:version="1.1" sparkle:shortVersionString="1.1" sparkle:deltaFrom="1.0" length="123168" type="application/octet-stream" sparkle:edSignature="KoYMo7kGzPNlsG1wjIxwr926bKDhRiAq7VyDL1230ikM53JlGZvbUg4BLeT8C3e0wx1Q20SO4orw94xDmnmjAw=="/>
+                <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster1.1-0.2.delta" sparkle:version="1.1" sparkle:shortVersionString="1.1" sparkle:deltaFrom="0.2" length="213811" type="application/octet-stream" sparkle:edSignature="pu0QvzKN3ouhF20zQ/PF9xjESVJaSzg9Bbde3E0TmKkdfse4snFMV6IJWNMvyC9comCE1FFM+Q5t1A5h25MRDQ=="/>
+                <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster1.1-0.1.delta" sparkle:version="1.1" sparkle:shortVersionString="1.1" sparkle:deltaFrom="0.1" length="225979" type="application/octet-stream" sparkle:edSignature="EtLk8R1Iq5usEsuin3PKiRPCp0FM2Anbnu6mP0IsBDHnsYW1svLTUzyarwgjg5nY4eCadK6qYC92zD78oHp/AQ=="/>
             </sparkle:deltas>
         </item>
     </channel>

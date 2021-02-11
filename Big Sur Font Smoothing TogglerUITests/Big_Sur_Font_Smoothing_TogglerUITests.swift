@@ -8,9 +8,6 @@
 import XCTest
 
 class Big_Sur_Font_Smoothing_TogglerUITests: XCTestCase {
-    
-    private let getFontSmoothingStateArguments = ["-currentHost", "read", "Apple Global Domain", "AppleFontSmoothing"]
-    private var initialState: DefaultsResult?
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -60,6 +57,9 @@ class Big_Sur_Font_Smoothing_TogglerUITests: XCTestCase {
         let disabledResult = try? runDefaultsCommand(with: getFontSmoothingStateArguments)
         XCTAssert(disabledResult?.output == "0\n")
     }
+    
+    private let getFontSmoothingStateArguments = ["-currentHost", "read", "Apple Global Domain", "AppleFontSmoothing"]
+    private var initialState: DefaultsResult?
     
     private struct DefaultsResult {
         let output: String

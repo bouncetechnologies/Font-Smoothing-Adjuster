@@ -39,8 +39,6 @@ class MainWindowController: NSWindowController {
                 mediumFontSmoothingRadioButton.state = .on
             case .heavyFontSmoothing:
                 heavyFontSmoothingRadioButton.state = .on
-            case .defaultFontSmoothing:
-                mediumFontSmoothingRadioButton.state = .on
             }
         } catch {
             os_log(.error, "Error getting font smoothing defaults: %s", error.localizedDescription)
