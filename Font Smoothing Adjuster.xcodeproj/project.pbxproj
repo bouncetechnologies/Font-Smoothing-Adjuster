@@ -68,6 +68,8 @@
 		532D4AEF25DD2ACF00BF2C57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainWindowController.xib; sourceTree = "<group>"; };
 		532D4AF425DD2ADA00BF2C57 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainWindowController.strings; sourceTree = "<group>"; };
 		532D4B0525DD343200BF2C57 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		532D4B0825DD3A2500BF2C57 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MainWindowController.strings; sourceTree = "<group>"; };
+		532D4B0925DD3A2500BF2C57 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		533B9D1F25C8421E00EB561A /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		533B9D2025C8428500EB561A /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		5350902F2562BD94005CCD39 /* Font Smoothing Adjuster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Font Smoothing Adjuster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -277,6 +279,7 @@
 				en,
 				Base,
 				fr,
+				es,
 			);
 			mainGroup = 535090262562BD94005CCD39;
 			packageReferences = (
@@ -378,6 +381,7 @@
 			children = (
 				532D4AEF25DD2ACF00BF2C57 /* Base */,
 				532D4AF425DD2ADA00BF2C57 /* fr */,
+				532D4B0825DD3A2500BF2C57 /* es */,
 			);
 			name = MainWindowController.xib;
 			sourceTree = "<group>";
@@ -387,6 +391,7 @@
 			children = (
 				535090372562BD95005CCD39 /* Base */,
 				532D4B0525DD343200BF2C57 /* fr */,
+				532D4B0925DD3A2500BF2C57 /* es */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
