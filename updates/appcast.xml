@@ -4,6 +4,7 @@
         <title>Font Smoothing Adjuster</title>
         <item>
             <title>1.0</title>
+            <description>Initial release.</description>
             <pubDate>Tue, 02 Feb 2021 16:10:26 +0000</pubDate>
             <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
             <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster%201.0.dmg" sparkle:version="1.0" sparkle:shortVersionString="1.0" length="1965774" type="application/octet-stream" sparkle:edSignature="Ee9TAMDQoRWovOk3utMQpwSeUPT3RGtLnRTbdd4SQ1OrvcXpg/e9x20HUIFlFzmsrLn36q26JLY+ZQinGxWRDg=="/>
@@ -26,6 +27,7 @@
         </item>
         <item>
             <title>1.1</title>
+            <description>Refactor to use Core Foundation functions instead of calling the defaults process.</description>
             <pubDate>Thu, 11 Feb 2021 14:19:37 +0000</pubDate>
             <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
             <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster%201.1.dmg" sparkle:version="1.1" sparkle:shortVersionString="1.1" length="1965755" type="application/octet-stream" sparkle:edSignature="bTe93NCsH09Bv06QoKzL40wCMprzmdGporSVGOdSO9GW3CeCkA8jwBL2hK7CkpzlJ+1iMa77h/7n4mRtq2wrDg=="/>
@@ -33,6 +35,19 @@
                 <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster1.1-1.0.delta" sparkle:version="1.1" sparkle:shortVersionString="1.1" sparkle:deltaFrom="1.0" length="123168" type="application/octet-stream" sparkle:edSignature="KoYMo7kGzPNlsG1wjIxwr926bKDhRiAq7VyDL1230ikM53JlGZvbUg4BLeT8C3e0wx1Q20SO4orw94xDmnmjAw=="/>
                 <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster1.1-0.2.delta" sparkle:version="1.1" sparkle:shortVersionString="1.1" sparkle:deltaFrom="0.2" length="213811" type="application/octet-stream" sparkle:edSignature="pu0QvzKN3ouhF20zQ/PF9xjESVJaSzg9Bbde3E0TmKkdfse4snFMV6IJWNMvyC9comCE1FFM+Q5t1A5h25MRDQ=="/>
                 <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster1.1-0.1.delta" sparkle:version="1.1" sparkle:shortVersionString="1.1" sparkle:deltaFrom="0.1" length="225979" type="application/octet-stream" sparkle:edSignature="EtLk8R1Iq5usEsuin3PKiRPCp0FM2Anbnu6mP0IsBDHnsYW1svLTUzyarwgjg5nY4eCadK6qYC92zD78oHp/AQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
+            <title>1.1.1</title>
+            <description>Fix an issue where the app would error if the AppleFontSmoothing preference was not set.</description>
+            <pubDate>Wed, 17 Feb 2021 09:39:39 +0000</pubDate>
+            <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
+            <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster%201.1.1.dmg" sparkle:version="1.1.1" sparkle:shortVersionString="1.1.1" length="1965138" type="application/octet-stream" sparkle:edSignature="XCjEmjcR3l6Dbdh58/Pdyh6+6vyw2RC7G075mN99ia7CusDh+mKrdjhFLvFJU1ikKWsT42xyBgyTm40jRjsXBA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster1.1.1-1.1.delta" sparkle:version="1.1.1" sparkle:shortVersionString="1.1.1" sparkle:deltaFrom="1.1" length="16672" type="application/octet-stream" sparkle:edSignature="vsMMQdJ7/ZcxvThsHB/Urra2zgFp+syCIZ4MxYXAud6H22rRGXR45ypz/0CDw45gYUvDA9uyWFVu/yvwLLcqAw=="/>
+                <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster1.1.1-1.0.delta" sparkle:version="1.1.1" sparkle:shortVersionString="1.1.1" sparkle:deltaFrom="1.0" length="122337" type="application/octet-stream" sparkle:edSignature="7Z3UPn4oChHomp49N9GhU7mxdwqswqVs5NgrrAqY4LLIgWNp6vSyuOsKSJB6gOWCyguVvo2o5b0BzjvkxCBKAg=="/>
+                <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster1.1.1-0.2.delta" sparkle:version="1.1.1" sparkle:shortVersionString="1.1.1" sparkle:deltaFrom="0.2" length="212443" type="application/octet-stream" sparkle:edSignature="QD6Uq9gnhX5ku65AkQeShQtjh1YS3n+TiT1I8g+Mpdi9vl7YIWLYsLgVc0WScFZJ3y4y0gU+Cn3H3QJkR9N3Ag=="/>
+                <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster1.1.1-0.1.delta" sparkle:version="1.1.1" sparkle:shortVersionString="1.1.1" sparkle:deltaFrom="0.1" length="224510" type="application/octet-stream" sparkle:edSignature="edcrf3mA7Qz4j90Ylp0Ik8zgRtFVKgXq4Uyhgx8vkCv5AZOLCqNmvGQ6hDr7/ACDriPGRYZkyiSu28jXWWy/CQ=="/>
             </sparkle:deltas>
         </item>
     </channel>
