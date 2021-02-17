@@ -83,10 +83,10 @@ class MainWindowController: NSWindowController {
     func presentSuccessSheet() {
         guard let window = self.window else { return }
         let alert = NSAlert()
-        alert.messageText = "Font smoothing preferences successfully updated"
-        alert.informativeText = "Log off or restart your computer for the changes to take effect."
-        alert.addButton(withTitle: "Log out now")
-        alert.addButton(withTitle: "Log out later")
+        alert.messageText = NSLocalizedString("Font smoothing preferences successfully updated", comment: "Title for preferences update success sheet modal")
+        alert.informativeText = NSLocalizedString("Log out or restart your Mac for the changes to take effect.", comment: "Informative text for preferences update success sheet modal")
+        alert.addButton(withTitle: NSLocalizedString("Log out now", comment: "Log out now button text"))
+        alert.addButton(withTitle: NSLocalizedString("Log out later", comment: "Log out later button text"))
         alert.alertStyle = .informational
         alert.beginSheetModal(for: window) { (response) in
             switch response {
@@ -119,8 +119,8 @@ class MainWindowController: NSWindowController {
     func presentErrorSheet(_ error: Error) {
         guard let window = self.window else { return }
         let alert = NSAlert(error: error)
-        alert.messageText = "The operation couldn't be completed"
-        alert.informativeText = "An unexpected error occurred. Please view the logs in the Console app for details."
+        alert.messageText = NSLocalizedString("The operation couldn't be completed", comment: "Title for error sheet")
+        alert.informativeText = NSLocalizedString("An unexpected error occurred. Please view the logs in the Console app for details.", comment: "Informative text for error sheet")
         alert.alertStyle = .critical
         alert.beginSheetModal(for: window)
     }

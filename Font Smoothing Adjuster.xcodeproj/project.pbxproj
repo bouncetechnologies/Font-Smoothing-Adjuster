@@ -10,6 +10,9 @@
 		532D4AEC25DD2ACF00BF2C57 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 532D4AF025DD2ACF00BF2C57 /* MainWindowController.xib */; };
 		532D4AED25DD2ACF00BF2C57 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 532D4AF025DD2ACF00BF2C57 /* MainWindowController.xib */; };
 		532D4AEE25DD2ACF00BF2C57 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 532D4AF025DD2ACF00BF2C57 /* MainWindowController.xib */; };
+		532D4B1D25DD700500BF2C57 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 532D4B2125DD700500BF2C57 /* Localizable.strings */; };
+		532D4B1E25DD700500BF2C57 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 532D4B2125DD700500BF2C57 /* Localizable.strings */; };
+		532D4B1F25DD700500BF2C57 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 532D4B2125DD700500BF2C57 /* Localizable.strings */; };
 		533B9D2125C8428500EB561A /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533B9D2025C8428500EB561A /* Config.swift */; };
 		533B9D4D25C9AC9800EB561A /* AppCenterAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 533B9D4C25C9AC9800EB561A /* AppCenterAnalytics */; };
 		535090332562BD94005CCD39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535090322562BD94005CCD39 /* AppDelegate.swift */; };
@@ -72,6 +75,9 @@
 		532D4B0925DD3A2500BF2C57 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		532D4B0C25DD3D7800BF2C57 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainWindowController.strings; sourceTree = "<group>"; };
 		532D4B0D25DD3D7800BF2C57 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		532D4B2025DD700500BF2C57 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		532D4B2425DD700900BF2C57 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		532D4B2525DD700A00BF2C57 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		533B9D1F25C8421E00EB561A /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		533B9D2025C8428500EB561A /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		5350902F2562BD94005CCD39 /* Font Smoothing Adjuster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Font Smoothing Adjuster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +157,7 @@
 				533B9D1F25C8421E00EB561A /* Config.xcconfig */,
 				535090832562DE10005CCD39 /* FontSmoothingDefaults.swift */,
 				5350906C2562BEF0005CCD39 /* Extensions.swift */,
+				532D4B2125DD700500BF2C57 /* Localizable.strings */,
 				532D4AF025DD2ACF00BF2C57 /* MainWindowController.xib */,
 				535090342562BD95005CCD39 /* Assets.xcassets */,
 				535090362562BD95005CCD39 /* MainMenu.xib */,
@@ -305,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				535090352562BD95005CCD39 /* Assets.xcassets in Resources */,
+				532D4B1D25DD700500BF2C57 /* Localizable.strings in Resources */,
 				532D4AEC25DD2ACF00BF2C57 /* MainWindowController.xib in Resources */,
 				535090382562BD95005CCD39 /* MainMenu.xib in Resources */,
 			);
@@ -315,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				532D4AED25DD2ACF00BF2C57 /* MainWindowController.xib in Resources */,
+				532D4B1E25DD700500BF2C57 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				532D4AEE25DD2ACF00BF2C57 /* MainWindowController.xib in Resources */,
+				532D4B1F25DD700500BF2C57 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +398,16 @@
 				532D4B0C25DD3D7800BF2C57 /* de */,
 			);
 			name = MainWindowController.xib;
+			sourceTree = "<group>";
+		};
+		532D4B2125DD700500BF2C57 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				532D4B2025DD700500BF2C57 /* fr */,
+				532D4B2425DD700900BF2C57 /* de */,
+				532D4B2525DD700A00BF2C57 /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		535090362562BD95005CCD39 /* MainMenu.xib */ = {
