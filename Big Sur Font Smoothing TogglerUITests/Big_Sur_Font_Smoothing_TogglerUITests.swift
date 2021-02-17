@@ -16,14 +16,31 @@ class Big_Sur_Font_Smoothing_TogglerUITests: XCTestCase {
         continueAfterFailure = false
 
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        
+        // Record initial state so we can restore it during teardown
         initialState = try! runDefaultsCommand(with: getFontSmoothingStateArguments)
+        print("Initial state of defaults preferences: \(String(describing: initialState))")
+        
+        // Delete the AppleFontSmoothing preference so the initial state is the
+        // same as the default macOS Big Sur state for this preference
+        let arguments = ["-currentHost", "delete", "-g", "AppleFontSmoothing"]
+        let _ = try! runDefaultsCommand(with: arguments)
     }
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
-        let value = initialState!.output.split(separator: "\n")[0]
-        let arguments = ["-currentHost", "write", "-g", "AppleFontSmoothing", "-int", "\(value)"]
-        let _ = try! runDefaultsCommand(with: arguments)
+        
+        if initialState!.error.contains("The domain/default pair of (kCFPreferencesAnyApplication, AppleFontSmoothing) does not exist") {
+            // If the initial state was that no font smoothing preference was set, then ensure that
+            // any preferences from the tests are deleted
+            let arguments = ["-currentHost", "delete", "-g", "AppleFontSmoothing"]
+            let _ = try! runDefaultsCommand(with: arguments)
+        } else {
+            // Otherwise set to the preference recorded in the initial state
+            let value = initialState!.output.split(separator: "\n")[0]
+            let arguments = ["-currentHost", "write", "-g", "AppleFontSmoothing", "-int", "\(value)"]
+            let _ = try! runDefaultsCommand(with: arguments)
+        }
     }
 
     func testUI() throws {
