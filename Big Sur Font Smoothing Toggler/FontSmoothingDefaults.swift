@@ -32,9 +32,7 @@ class FontSmoothingDefaults {
     }
     
     func getFontSmoothingState() throws -> FontSmoothingOptions {
-        guard let value = CFPreferencesCopyAppValue(CFPreferencesConstants.key, CFPreferencesConstants.applicationID) as? Int else {
-            throw FontSmoothingDefaultsError.unknownError
-        }
+        let value = CFPreferencesCopyAppValue(CFPreferencesConstants.key, CFPreferencesConstants.applicationID) as? Int ?? 2
         
         guard let option = FontSmoothingOptions(rawValue: value) else {
             throw FontSmoothingDefaultsError.unknownError
