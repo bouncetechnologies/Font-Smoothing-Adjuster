@@ -1,0 +1,90 @@
+
+/* Class = "NSMenuItem"; title = "Font Smoothing Adjuster"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "Font Smoothing Adjuster";
+
+/* Class = "NSMenuItem"; title = "Enter Full Screen"; ObjectID = "4J7-dP-txa"; */
+"4J7-dP-txa.title" = "Activer le mode plein écran";
+
+/* Class = "NSMenuItem"; title = "Quit Font Smoothing Adjuster"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Quitter Font Smoothing Adjuster";
+
+/* Class = "NSMenuItem"; title = "Edit"; ObjectID = "5QF-Oa-p0T"; */
+"5QF-Oa-p0T.title" = "Modifier";
+
+/* Class = "NSMenuItem"; title = "About Font Smoothing Adjuster"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "À propos de Font Smoothing Adjuster";
+
+/* Class = "NSMenuItem"; title = "Redo"; ObjectID = "6dh-zS-Vam"; */
+"6dh-zS-Vam.title" = "Rétablir";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Menu principal";
+
+/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "BOF-NM-1cW"; */
+"BOF-NM-1cW.title" = "Préférences…";
+
+/* Class = "NSMenuItem"; title = "Close"; ObjectID = "DVo-aG-piG"; */
+"DVo-aG-piG.title" = "Fermer";
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
+"F2S-fz-NVQ.title" = "Aide";
+
+/* Class = "NSMenuItem"; title = "Font Smoothing Adjuster Help"; ObjectID = "FKE-Sm-Kum"; */
+"FKE-Sm-Kum.title" = "Aide de Font Smoothing Adjuster";
+
+/* Class = "NSMenuItem"; title = "View"; ObjectID = "H8h-7b-M4v"; */
+"H8h-7b-M4v.title" = "Présentation";
+
+/* Class = "NSMenu"; title = "View"; ObjectID = "HyV-fh-RgO"; */
+"HyV-fh-RgO.title" = "Présentation";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "Tout afficher";
+
+/* Class = "NSMenuItem"; title = "Bring All to Front"; ObjectID = "LE2-aR-0XJ"; */
+"LE2-aR-0XJ.title" = "Tout ramener au premier plan";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "NMo-om-nkz"; */
+"NMo-om-nkz.title" = "Services";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV"; */
+"OY7-WF-poV.title" = "Placer dans le Dock";
+
+/* Class = "NSMenuItem"; title = "Hide Font Smoothing Adjuster"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Masquer Font Smoothing Adjuster";
+
+/* Class = "NSMenuItem"; title = "Check For Updates..."; ObjectID = "Pqk-XC-P99"; */
+"Pqk-XC-P99.title" = "Rechercher des mises à jour...";
+
+/* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
+"R4o-n2-Eq4.title" = "Réduire/agrandir";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
+"Td7-aD-5lo.title" = "Fenêtre";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "Masquer les autres";
+
+/* Class = "NSMenu"; title = "Edit"; ObjectID = "W48-6f-4Dl"; */
+"W48-6f-4Dl.title" = "Édition";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "Fenêtre";
+
+/* Class = "NSMenu"; title = "File"; ObjectID = "bib-Uj-vzu"; */
+"bib-Uj-vzu.title" = "Fichier";
+
+/* Class = "NSMenuItem"; title = "File"; ObjectID = "dMs-cI-mzQ"; */
+"dMs-cI-mzQ.title" = "Fichier";
+
+/* Class = "NSMenuItem"; title = "Undo"; ObjectID = "dRJ-4n-Yzg"; */
+"dRJ-4n-Yzg.title" = "Annuler";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "hz9-B4-Xy5"; */
+"hz9-B4-Xy5.title" = "Services";
+
+/* Class = "NSMenu"; title = "Font Smoothing Adjuster"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "Font Smoothing Adjuster";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
+"wpr-3q-Mcd.title" = "Aide";
