@@ -23,8 +23,7 @@ class Big_Sur_Font_Smoothing_TogglerUITests: XCTestCase {
         
         // Delete the AppleFontSmoothing preference so the initial state is the
         // same as the default macOS Big Sur state for this preference
-        let arguments = ["-currentHost", "delete", "-g", "AppleFontSmoothing"]
-        let _ = try! runDefaultsCommand(with: arguments)
+        let _ = try! runDefaultsCommand(with: deleteFontSmoothingPreferenceArguments)
     }
 
     override func tearDownWithError() throws {
@@ -76,6 +75,7 @@ class Big_Sur_Font_Smoothing_TogglerUITests: XCTestCase {
     }
     
     private let getFontSmoothingStateArguments = ["-currentHost", "read", "Apple Global Domain", "AppleFontSmoothing"]
+    private let deleteFontSmoothingPreferenceArguments = ["-currentHost", "delete", "-g", "AppleFontSmoothing"]
     private var initialState: DefaultsResult?
     
     private struct DefaultsResult {
