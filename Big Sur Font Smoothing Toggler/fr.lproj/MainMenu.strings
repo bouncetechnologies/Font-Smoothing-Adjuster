@@ -54,7 +54,7 @@
 "Olw-nP-bQN.title" = "Masquer Font Smoothing Adjuster";
 
 /* Class = "NSMenuItem"; title = "Check For Updates..."; ObjectID = "Pqk-XC-P99"; */
-"Pqk-XC-P99.title" = "Rechercher des mises à jour...";
+"Pqk-XC-P99.title" = "Vérifier les mises à jour...";
 
 /* Class = "NSMenuItem"; title = "Zoom"; ObjectID = "R4o-n2-Eq4"; */
 "R4o-n2-Eq4.title" = "Réduire/agrandir";
