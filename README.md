@@ -3,6 +3,7 @@
 </p>
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/bouncetechnologies/Font-Smoothing-Adjuster)
+![Languages](https://img.shields.io/badge/Languages-en%2C%20es%2C%20fr%2C%20de-brightgreen)
 
 # Font Smoothing Adjuster
 ### Re-enable the font smoothing controls removed in macOS Big Sur.
@@ -55,5 +56,7 @@ Make sure Signing Certificate is set to Development
 Select Product -> Run from the menu, or press ⌘R
 
 #### Run the tests
+
+Please back up your current font smoothing preferences before running the tests.
 
 Select Product -> Test from the menu, or press ⌘U
