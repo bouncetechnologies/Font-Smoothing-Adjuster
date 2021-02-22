@@ -15,7 +15,8 @@ class MainWindowController: NSWindowController {
     @IBOutlet weak var mediumFontSmoothingRadioButton: NSButton!
     @IBOutlet weak var heavyFontSmoothingRadioButton: NSButton!
     
-    let fontSmoothingDefaults = FontSmoothingDefaults()
+    private let fontSmoothingDefaults = FontSmoothingDefaults()
+    private typealias FontSmoothingOption = FontSmoothingDefaults.FontSmoothingOptions
     
     override var windowNibName: NSNib.Name? {
         return NSNib.Name.mainWindowController
@@ -27,48 +28,53 @@ class MainWindowController: NSWindowController {
         setRadioButtonsToCurrentDefaultsState()
     }
     
-    func setRadioButtonsToCurrentDefaultsState() {
+    private func setRadioButtonsToCurrentDefaultsState() {
         do {
-            let fontSmoothingState = try fontSmoothingDefaults.getFontSmoothingState()
-            switch fontSmoothingState {
-            case .noFontSmoothing:
-                disabledFontSmoothingRadioButton.state = .on
-            case .lightFontSmoothing:
-                lightFontSmoothingRadioButton.state = .on
-            case .mediumFontSmoothing:
-                mediumFontSmoothingRadioButton.state = .on
-            case .heavyFontSmoothing:
-                heavyFontSmoothingRadioButton.state = .on
-            }
+            let currentFontSmoothingState = try fontSmoothingDefaults.getFontSmoothingState()
+            updateUIWithState(fontSmoothingState: currentFontSmoothingState)
         } catch {
             os_log(.error, "Error getting font smoothing defaults: %s", error.localizedDescription)
             Analytics.trackEvent("Error getting font smoothing defaults: \(error.localizedDescription)")
             presentErrorSheet(error)
         }
-            
+    }
+    
+    private func updateUIWithState(fontSmoothingState: FontSmoothingOption) {
+        switch fontSmoothingState {
+        case .noFontSmoothing:
+            disabledFontSmoothingRadioButton.state = .on
+        case .lightFontSmoothing:
+            lightFontSmoothingRadioButton.state = .on
+        case .mediumFontSmoothing:
+            mediumFontSmoothingRadioButton.state = .on
+        case .heavyFontSmoothing:
+            heavyFontSmoothingRadioButton.state = .on
+        }
     }
     
     @IBAction func toggleFontSmoothing(_ sender: NSButton) {
-        let fontSmoothingOption: FontSmoothingDefaults.FontSmoothingOptions
+        let newFontSmoothingState: FontSmoothingOption
         switch sender {
         case disabledFontSmoothingRadioButton:
-            fontSmoothingOption = .noFontSmoothing
+            newFontSmoothingState = .noFontSmoothing
         case lightFontSmoothingRadioButton:
-            fontSmoothingOption = .lightFontSmoothing
+            newFontSmoothingState = .lightFontSmoothing
         case mediumFontSmoothingRadioButton:
-            fontSmoothingOption = .mediumFontSmoothing
+            newFontSmoothingState = .mediumFontSmoothing
         case heavyFontSmoothingRadioButton:
-            fontSmoothingOption = .heavyFontSmoothing
+            newFontSmoothingState = .heavyFontSmoothing
         default:
             Analytics.trackEvent("Unsupported font smoothing radio button option selected")
             fatalError("Unsupported font smoothing radio button option selected.")
         }
         do {
-            let fontSmoothingState = try fontSmoothingDefaults.getFontSmoothingState()
-            guard fontSmoothingOption != fontSmoothingState else {
+            let currentFontSmoothingState = try fontSmoothingDefaults.getFontSmoothingState()
+            guard newFontSmoothingState != currentFontSmoothingState else {
                 return
             }
-            try fontSmoothingDefaults.setFontSmoothing(option: fontSmoothingOption)
+                       
+            try updateFontSmoothingPreferences(newState: newFontSmoothingState, oldState: currentFontSmoothingState)
+            
             Analytics.trackEvent("Font smoothing preferences updated")
             presentSuccessSheet()
         } catch {
@@ -80,13 +86,31 @@ class MainWindowController: NSWindowController {
         }
     }
     
-    func presentSuccessSheet() {
+    private func updateFontSmoothingPreferences(newState: FontSmoothingOption, oldState: FontSmoothingOption) throws {
+        try fontSmoothingDefaults.setFontSmoothing(option: newState)
+        setRadioButtonsToCurrentDefaultsState()
+        window?.undoManager?.registerUndo(withTarget: self, handler: { target in
+            try? target.undoUpdateFontSmoothingPreferences(oldState: oldState, newState: newState)
+            target.setRadioButtonsToCurrentDefaultsState()
+        })
+    }
+    
+    private func undoUpdateFontSmoothingPreferences(oldState: FontSmoothingOption, newState: FontSmoothingOption) throws {
+        try fontSmoothingDefaults.setFontSmoothing(option: oldState)
+        setRadioButtonsToCurrentDefaultsState()
+        window?.undoManager?.registerUndo(withTarget: self, handler: { target in
+            try? target.updateFontSmoothingPreferences(newState: newState, oldState: oldState)
+            target.setRadioButtonsToCurrentDefaultsState()
+        })
+    }
+    
+    private func presentSuccessSheet() {
         guard let window = self.window else { return }
         let alert = NSAlert()
-        alert.messageText = "Font smoothing preferences successfully updated"
-        alert.informativeText = "Log off or restart your computer for the changes to take effect."
-        alert.addButton(withTitle: "Log out now")
-        alert.addButton(withTitle: "Log out later")
+        alert.messageText = NSLocalizedString("Font smoothing preferences successfully updated", comment: "Title for preferences update success sheet modal")
+        alert.informativeText = NSLocalizedString("Log out or restart your Mac for the changes to take effect.", comment: "Informative text for preferences update success sheet modal")
+        alert.addButton(withTitle: NSLocalizedString("Log out now", comment: "Log out now button text"))
+        alert.addButton(withTitle: NSLocalizedString("Log out later", comment: "Log out later button text"))
         alert.alertStyle = .informational
         alert.beginSheetModal(for: window) { (response) in
             switch response {
@@ -116,11 +140,11 @@ class MainWindowController: NSWindowController {
         }
     }
     
-    func presentErrorSheet(_ error: Error) {
+    private func presentErrorSheet(_ error: Error) {
         guard let window = self.window else { return }
         let alert = NSAlert(error: error)
-        alert.messageText = "The operation couldn't be completed"
-        alert.informativeText = "An unexpected error occurred. Please view the logs in the Console app for details."
+        alert.messageText = NSLocalizedString("The operation couldn't be completed", comment: "Title for error sheet")
+        alert.informativeText = NSLocalizedString("An unexpected error occurred. Please view the logs in the Console app for details.", comment: "Informative text for error sheet")
         alert.alertStyle = .critical
         alert.beginSheetModal(for: window)
     }

@@ -1,0 +1,18 @@
+
+/* Class = "NSTextFieldCell"; title = "Font smoothing:"; ObjectID = "3bW-X9-caa"; */
+"3bW-X9-caa.title" = "Lissage des polices:";
+
+/* Class = "NSWindow"; title = "Font Smoothing Adjuster"; ObjectID = "F0z-JX-Cv5"; */
+"F0z-JX-Cv5.title" = "Font Smoothing Adjuster";
+
+/* Class = "NSButtonCell"; title = "Light"; ObjectID = "Qbv-If-yJ0"; */
+"Qbv-If-yJ0.title" = "Léger";
+
+/* Class = "NSButtonCell"; title = "Medium (default)"; ObjectID = "Uan-kw-Wxq"; */
+"Uan-kw-Wxq.title" = "Moyen (par défaut)";
+
+/* Class = "NSButtonCell"; title = "Heavy"; ObjectID = "cd3-89-pg3"; */
+"cd3-89-pg3.title" = "Lourd";
+
+/* Class = "NSButtonCell"; title = "Disabled"; ObjectID = "ym3-OR-J9l"; */
+"ym3-OR-J9l.title" = "Désactivé";
