@@ -72,3 +72,5 @@ playground.xcworkspace
 ## Gcc Patch
 /*.gcno
 
+## Sparkle
+*.delta
