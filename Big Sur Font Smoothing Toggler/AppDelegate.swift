@@ -21,7 +21,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         self.mainWindowController = mainWindowController
         
         #if !DEBUG
-        AppCenter.start(withAppSecret: AppCenterConfig.secret, services: [Analytics.self, Crashes.self])
+        let appCenterSecret = AppCenterConfig.secret
+        guard appCenterSecret != "" else { fatalError("Failed to get AppCenter secret") }
+        AppCenter.start(withAppSecret: appCenterSecret, services: [Analytics.self, Crashes.self])
+        guard Analytics.enabled else { fatalError("Failed to enable analytics") }
         #endif
     }
 
