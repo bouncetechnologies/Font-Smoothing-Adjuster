@@ -14,7 +14,6 @@
 		532D4B1E25DD700500BF2C57 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 532D4B2125DD700500BF2C57 /* Localizable.strings */; };
 		532D4B1F25DD700500BF2C57 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 532D4B2125DD700500BF2C57 /* Localizable.strings */; };
 		533B9D2125C8428500EB561A /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533B9D2025C8428500EB561A /* Config.swift */; };
-		533B9D4D25C9AC9800EB561A /* AppCenterAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 533B9D4C25C9AC9800EB561A /* AppCenterAnalytics */; };
 		535090332562BD94005CCD39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535090322562BD94005CCD39 /* AppDelegate.swift */; };
 		535090352562BD95005CCD39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 535090342562BD95005CCD39 /* Assets.xcassets */; };
 		535090382562BD95005CCD39 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 535090362562BD95005CCD39 /* MainMenu.xib */; };
@@ -29,10 +28,10 @@
 		535090842562DE10005CCD39 /* FontSmoothingDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535090832562DE10005CCD39 /* FontSmoothingDefaults.swift */; };
 		535090852562DE10005CCD39 /* FontSmoothingDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535090832562DE10005CCD39 /* FontSmoothingDefaults.swift */; };
 		535090862562DE10005CCD39 /* FontSmoothingDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535090832562DE10005CCD39 /* FontSmoothingDefaults.swift */; };
+		53A9B3BE25E7B6560018E1FC /* AppCenterCrashes in Frameworks */ = {isa = PBXBuildFile; productRef = 53A9B3BD25E7B6560018E1FC /* AppCenterCrashes */; };
+		53A9B3C025E7B6560018E1FC /* AppCenterAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 53A9B3BF25E7B6560018E1FC /* AppCenterAnalytics */; };
 		9308ED3925C32444008EC774 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9308ED3825C32444008EC774 /* Sparkle.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		9308ED3C25C3245C008EC774 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9308ED3825C32444008EC774 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		937ED7A425C31D01009FC993 /* AppCenterCrashes in Frameworks */ = {isa = PBXBuildFile; productRef = 937ED7A325C31D01009FC993 /* AppCenterCrashes */; };
-		937ED7A625C31D01009FC993 /* AppCenterAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 937ED7A525C31D01009FC993 /* AppCenterAnalytics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,9 +102,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				937ED7A625C31D01009FC993 /* AppCenterAnalytics in Frameworks */,
 				9308ED3925C32444008EC774 /* Sparkle.framework in Frameworks */,
-				937ED7A425C31D01009FC993 /* AppCenterCrashes in Frameworks */,
+				53A9B3BE25E7B6560018E1FC /* AppCenterCrashes in Frameworks */,
+				53A9B3C025E7B6560018E1FC /* AppCenterAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +119,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				533B9D4D25C9AC9800EB561A /* AppCenterAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +210,8 @@
 			);
 			name = "Font Smoothing Adjuster";
 			packageProductDependencies = (
-				937ED7A325C31D01009FC993 /* AppCenterCrashes */,
-				937ED7A525C31D01009FC993 /* AppCenterAnalytics */,
+				53A9B3BD25E7B6560018E1FC /* AppCenterCrashes */,
+				53A9B3BF25E7B6560018E1FC /* AppCenterAnalytics */,
 			);
 			productName = "Big Sur Font Smoothing Toggler";
 			productReference = 5350902F2562BD94005CCD39 /* Font Smoothing Adjuster.app */;
@@ -252,7 +250,6 @@
 			);
 			name = "Font Smoothing AdjusterUITests";
 			packageProductDependencies = (
-				533B9D4C25C9AC9800EB561A /* AppCenterAnalytics */,
 			);
 			productName = "Big Sur Font Smoothing TogglerUITests";
 			productReference = 5350904A2562BD95005CCD39 /* Font Smoothing AdjusterUITests.xctest */;
@@ -293,7 +290,7 @@
 			);
 			mainGroup = 535090262562BD94005CCD39;
 			packageReferences = (
-				937ED7A225C31D01009FC993 /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */,
+				53A9B3BC25E7B6560018E1FC /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */,
 			);
 			productRefGroup = 535090302562BD94005CCD39 /* Products */;
 			projectDirPath = "";
@@ -552,7 +549,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 1.2.1;
 				DEVELOPMENT_TEAM = 4YNZUF26AM;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -564,7 +561,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bouncetechnologies.Font-Smoothing-Adjuster";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -580,7 +577,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 1.2.1;
 				DEVELOPMENT_TEAM = 4YNZUF26AM;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -592,7 +589,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bouncetechnologies.Font-Smoothing-Adjuster";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -729,7 +726,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		937ED7A225C31D01009FC993 /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */ = {
+		53A9B3BC25E7B6560018E1FC /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/microsoft/appcenter-sdk-apple.git";
 			requirement = {
@@ -740,19 +737,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		533B9D4C25C9AC9800EB561A /* AppCenterAnalytics */ = {
+		53A9B3BD25E7B6560018E1FC /* AppCenterCrashes */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 937ED7A225C31D01009FC993 /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */;
-			productName = AppCenterAnalytics;
-		};
-		937ED7A325C31D01009FC993 /* AppCenterCrashes */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 937ED7A225C31D01009FC993 /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */;
+			package = 53A9B3BC25E7B6560018E1FC /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */;
 			productName = AppCenterCrashes;
 		};
-		937ED7A525C31D01009FC993 /* AppCenterAnalytics */ = {
+		53A9B3BF25E7B6560018E1FC /* AppCenterAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 937ED7A225C31D01009FC993 /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */;
+			package = 53A9B3BC25E7B6560018E1FC /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */;
 			productName = AppCenterAnalytics;
 		};
 /* End XCSwiftPackageProductDependency section */
