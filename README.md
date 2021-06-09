@@ -20,7 +20,7 @@ Font smoothing is something that macOS does to make your fonts look slightly bol
 On previous releases of macOS, you could disable font smoothing from the General pane of the System Preferences app, but this option has been removed from macOS Big Sur.
 This annoyed us, so we made a tiny app that lets you easily choose what level of font smoothing you would like, or disable it altogether.
 
-##Can't I just use terminal commands to adjust font smoothing?
+## Can't I just use terminal commands to adjust font smoothing?
 Absolutely. If you’re comfortable using a terminal, you can also use the following commands to set your desired level of font smoothing instead of using the app. You will need to log off or restart your Mac for the changes to take effect.
 
 #### Disable font smoothing:
