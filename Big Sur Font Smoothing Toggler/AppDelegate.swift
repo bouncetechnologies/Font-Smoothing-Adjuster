@@ -20,12 +20,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         mainWindowController.showWindow(self)
         self.mainWindowController = mainWindowController
         
-        #if !DEBUG
-        let appCenterSecret = AppCenterConfig.secret
-        guard appCenterSecret != "" else { fatalError("Failed to get AppCenter secret") }
-        AppCenter.start(withAppSecret: appCenterSecret, services: [Analytics.self, Crashes.self])
-        guard Analytics.enabled else { fatalError("Failed to enable analytics") }
-        #endif
+        configureAnalytics()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -34,6 +29,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
         return true
+    }
+}
+
+extension AppDelegate {
+    
+    func configureAnalytics() {
+        if UserDefaults.disableAnalytics { return }
+        
+        #if !DEBUG
+        let appCenterSecret = AppCenterConfig.secret
+        guard appCenterSecret != "" else { fatalError("Failed to get AppCenter secret") }
+        AppCenter.start(withAppSecret: appCenterSecret, services: [Analytics.self, Crashes.self])
+        guard Analytics.enabled else { fatalError("Failed to enable analytics") }
+        #endif
     }
 }
 
