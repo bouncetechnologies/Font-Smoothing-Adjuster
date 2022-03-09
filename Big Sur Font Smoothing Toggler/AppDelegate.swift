@@ -15,6 +15,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     var mainWindowController: MainWindowController?
     
+    @IBAction func sponsorshipButtonPressed(_ sender: NSMenuItem) {
+        guard let sponsorshipURL = URL(string: "https://www.buymeacoffee.com/bouncetech") else { return }
+        NSWorkspace.shared.open(sponsorshipURL)
+    }
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         let mainWindowController = MainWindowController()
         mainWindowController.showWindow(self)
