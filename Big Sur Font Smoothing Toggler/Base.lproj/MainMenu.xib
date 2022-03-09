@@ -36,7 +36,7 @@
                             <menuItem title="Allow Anonymous Analytics" state="on" id="HOq-Gv-33I">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
-                                    <binding destination="yfj-eY-49O" name="value" keyPath="values.AllowAnalytics" id="HzV-z5-yU5">
+                                    <binding destination="yfj-eY-49O" name="value" keyPath="values.DisableAnalytics" id="Ksj-cz-FEt">
                                         <dictionary key="options">
                                             <string key="NSValueTransformerName">NSNegateBoolean</string>
                                         </dictionary>
