@@ -44,6 +44,13 @@
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
+                            <menuItem title="Sponsor This Project" id="Era-1d-0C9">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="sponsorshipButtonPressed:" target="Voe-Tx-rLC" id="wXB-Nq-WnY"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="R4Q-wB-JEr"/>
                             <menuItem title="Services" id="NMo-om-nkz">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
@@ -159,5 +166,8 @@
         </menu>
         <customObject id="CwV-Nc-FtL" customClass="SUUpdater"/>
         <userDefaultsController representsSharedInstance="YES" id="yfj-eY-49O"/>
+        <menuItem title="Item" id="EKp-ue-sTI">
+            <modifierMask key="keyEquivalentModifierMask"/>
+        </menuItem>
     </objects>
 </document>
