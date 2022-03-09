@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="MainWindowController" customModule="Font_Smoothing_Adjuster" customModuleProvider="target">
             <connections>
                 <outlet property="disabledFontSmoothingRadioButton" destination="yAH-xX-66R" id="B7B-Yy-ouv"/>
-                <outlet property="heavyFontSmoothingRadioButton" destination="bnW-ud-KsD" id="mBs-QY-5dx"/>
-                <outlet property="lightFontSmoothingRadioButton" destination="6TV-lF-vbv" id="56e-wz-Jhr"/>
-                <outlet property="mediumFontSmoothingRadioButton" destination="MXo-vC-CTB" id="8go-i9-fXM"/>
+                <outlet property="enabledFontSmoothingRadioButton" destination="MXo-vC-CTB" id="8go-i9-fXM"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -22,15 +20,15 @@
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="240" width="417" height="203"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="875"/>
-            <view key="contentView" id="se5-gp-TjO">
-                <rect key="frame" x="0.0" y="0.0" width="417" height="204"/>
+            <view key="contentView" misplaced="YES" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="418" height="203"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="6" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xCM-7O-UeI">
-                        <rect key="frame" x="92" y="61" width="233" height="82"/>
+                        <rect key="frame" x="92" y="83" width="234" height="38"/>
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="vBp-SU-VGI">
-                                <rect key="frame" x="-2" y="66" width="103" height="16"/>
+                                <rect key="frame" x="-2" y="22" width="103" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="right" title="Font smoothing:" id="3bW-X9-caa">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -38,10 +36,10 @@
                                 </textFieldCell>
                             </textField>
                             <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="6" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U7t-9F-cvi">
-                                <rect key="frame" x="105" y="0.0" width="128" height="82"/>
+                                <rect key="frame" x="105" y="0.0" width="129" height="38"/>
                                 <subviews>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yAH-xX-66R">
-                                        <rect key="frame" x="-2" y="65" width="79" height="18"/>
+                                        <rect key="frame" x="-2" y="21" width="79" height="18"/>
                                         <buttonCell key="cell" type="radio" title="Disabled" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="ym3-OR-J9l">
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -50,19 +48,9 @@
                                             <action selector="toggleFontSmoothing:" target="-2" id="UrR-lP-ykQ"/>
                                         </connections>
                                     </button>
-                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6TV-lF-vbv">
-                                        <rect key="frame" x="-2" y="43" width="57" height="18"/>
-                                        <buttonCell key="cell" type="radio" title="Light" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="Qbv-If-yJ0">
-                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                            <font key="font" metaFont="system"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="toggleFontSmoothing:" target="-2" id="i9p-hF-5FQ"/>
-                                        </connections>
-                                    </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MXo-vC-CTB">
-                                        <rect key="frame" x="-2" y="21" width="130" height="18"/>
-                                        <buttonCell key="cell" type="radio" title="Medium (default)" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="Uan-kw-Wxq">
+                                        <rect key="frame" x="-2" y="-1" width="131" height="18"/>
+                                        <buttonCell key="cell" type="radio" title="Enabled (default)" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="Uan-kw-Wxq">
                                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
@@ -70,26 +58,12 @@
                                             <action selector="toggleFontSmoothing:" target="-2" id="Ric-3e-rix"/>
                                         </connections>
                                     </button>
-                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bnW-ud-KsD">
-                                        <rect key="frame" x="-2" y="-1" width="64" height="18"/>
-                                        <buttonCell key="cell" type="radio" title="Heavy" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="cd3-89-pg3">
-                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                            <font key="font" metaFont="system"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="toggleFontSmoothing:" target="-2" id="kG6-4A-bH6"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <visibilityPriorities>
                                     <integer value="1000"/>
                                     <integer value="1000"/>
-                                    <integer value="1000"/>
-                                    <integer value="1000"/>
                                 </visibilityPriorities>
                                 <customSpacing>
-                                    <real value="3.4028234663852886e+38"/>
-                                    <real value="3.4028234663852886e+38"/>
                                     <real value="3.4028234663852886e+38"/>
                                     <real value="3.4028234663852886e+38"/>
                                 </customSpacing>

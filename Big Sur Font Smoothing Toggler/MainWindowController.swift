@@ -11,9 +11,7 @@ import AppCenterAnalytics
 
 class MainWindowController: NSWindowController {
     @IBOutlet weak var disabledFontSmoothingRadioButton: NSButton!
-    @IBOutlet weak var lightFontSmoothingRadioButton: NSButton!
-    @IBOutlet weak var mediumFontSmoothingRadioButton: NSButton!
-    @IBOutlet weak var heavyFontSmoothingRadioButton: NSButton!
+    @IBOutlet weak var enabledFontSmoothingRadioButton: NSButton!
     
     private let fontSmoothingDefaults = FontSmoothingDefaults()
     private typealias FontSmoothingOption = FontSmoothingDefaults.FontSmoothingOptions
@@ -41,14 +39,10 @@ class MainWindowController: NSWindowController {
     
     private func updateUIWithState(fontSmoothingState: FontSmoothingOption) {
         switch fontSmoothingState {
-        case .noFontSmoothing:
+        case .disabled:
             disabledFontSmoothingRadioButton.state = .on
-        case .lightFontSmoothing:
-            lightFontSmoothingRadioButton.state = .on
-        case .mediumFontSmoothing:
-            mediumFontSmoothingRadioButton.state = .on
-        case .heavyFontSmoothing:
-            heavyFontSmoothingRadioButton.state = .on
+        default:
+            enabledFontSmoothingRadioButton.state = .on
         }
     }
     
@@ -56,13 +50,9 @@ class MainWindowController: NSWindowController {
         let newFontSmoothingState: FontSmoothingOption
         switch sender {
         case disabledFontSmoothingRadioButton:
-            newFontSmoothingState = .noFontSmoothing
-        case lightFontSmoothingRadioButton:
-            newFontSmoothingState = .lightFontSmoothing
-        case mediumFontSmoothingRadioButton:
-            newFontSmoothingState = .mediumFontSmoothing
-        case heavyFontSmoothingRadioButton:
-            newFontSmoothingState = .heavyFontSmoothing
+            newFontSmoothingState = .disabled
+        case enabledFontSmoothingRadioButton:
+            newFontSmoothingState = .enabled
         default:
             Analytics.trackEvent("Unsupported font smoothing radio button option selected")
             fatalError("Unsupported font smoothing radio button option selected.")

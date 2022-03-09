@@ -52,26 +52,18 @@ class Big_Sur_Font_Smoothing_TogglerUITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
         let bigSurFontSmoothingTogglerWindow = XCUIApplication().windows["Font Smoothing Adjuster"]
-        bigSurFontSmoothingTogglerWindow.radioButtons["Light"].click()
+        
         let logOutLaterButton = bigSurFontSmoothingTogglerWindow.sheets["alert"].buttons["Log out later"]
-        logOutLaterButton.click()
-        let lightResult = try? runDefaultsCommand(with: getFontSmoothingStateArguments)
-        XCTAssert(lightResult?.output == "1\n")
-        
-        bigSurFontSmoothingTogglerWindow.radioButtons["Medium (default)"].click()
-        logOutLaterButton.click()
-        let mediumResult = try? runDefaultsCommand(with: getFontSmoothingStateArguments)
-        XCTAssert(mediumResult?.output == "2\n")
-        
-        bigSurFontSmoothingTogglerWindow.radioButtons["Heavy"].click()
-        logOutLaterButton.click()
-        let heavyResult = try? runDefaultsCommand(with: getFontSmoothingStateArguments)
-        XCTAssert(heavyResult?.output == "3\n")
         
         bigSurFontSmoothingTogglerWindow.radioButtons["Disabled"].click()
         logOutLaterButton.click()
         let disabledResult = try? runDefaultsCommand(with: getFontSmoothingStateArguments)
         XCTAssert(disabledResult?.output == "0\n")
+        
+        bigSurFontSmoothingTogglerWindow.radioButtons["Enabled (default)"].click()
+        logOutLaterButton.click()
+        let enabledResult = try? runDefaultsCommand(with: getFontSmoothingStateArguments)
+        XCTAssert(enabledResult?.output == "2\n")
     }
     
     private let getFontSmoothingStateArguments = ["-currentHost", "read", "Apple Global Domain", "AppleFontSmoothing"]
