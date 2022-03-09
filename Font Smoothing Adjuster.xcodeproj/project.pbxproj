@@ -28,6 +28,7 @@
 		535090842562DE10005CCD39 /* FontSmoothingDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535090832562DE10005CCD39 /* FontSmoothingDefaults.swift */; };
 		535090852562DE10005CCD39 /* FontSmoothingDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535090832562DE10005CCD39 /* FontSmoothingDefaults.swift */; };
 		535090862562DE10005CCD39 /* FontSmoothingDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535090832562DE10005CCD39 /* FontSmoothingDefaults.swift */; };
+		539459BF27D8B357009E315C /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 539459BE27D8B357009E315C /* Preferences.swift */; };
 		53A9B3BE25E7B6560018E1FC /* AppCenterCrashes in Frameworks */ = {isa = PBXBuildFile; productRef = 53A9B3BD25E7B6560018E1FC /* AppCenterCrashes */; };
 		53A9B3C025E7B6560018E1FC /* AppCenterAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 53A9B3BF25E7B6560018E1FC /* AppCenterAnalytics */; };
 		9308ED3925C32444008EC774 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9308ED3825C32444008EC774 /* Sparkle.framework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -94,6 +95,7 @@
 		535090612562BE80005CCD39 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		5350906C2562BEF0005CCD39 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		535090832562DE10005CCD39 /* FontSmoothingDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSmoothingDefaults.swift; sourceTree = "<group>"; };
+		539459BE27D8B357009E315C /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		9308ED3825C32444008EC774 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,6 +163,7 @@
 				535090362562BD95005CCD39 /* MainMenu.xib */,
 				535090392562BD95005CCD39 /* Info.plist */,
 				5350903A2562BD95005CCD39 /* Big_Sur_Font_Smoothing_Toggler.entitlements */,
+				539459BE27D8B357009E315C /* Preferences.swift */,
 			);
 			path = "Big Sur Font Smoothing Toggler";
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 			files = (
 				535090632562BE80005CCD39 /* MainWindowController.swift in Sources */,
 				535090842562DE10005CCD39 /* FontSmoothingDefaults.swift in Sources */,
+				539459BF27D8B357009E315C /* Preferences.swift in Sources */,
 				533B9D2125C8428500EB561A /* Config.swift in Sources */,
 				5350906D2562BEF0005CCD39 /* Extensions.swift in Sources */,
 				535090332562BD94005CCD39 /* AppDelegate.swift in Sources */,
