@@ -20,6 +20,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         NSWorkspace.shared.open(sponsorshipURL)
     }
     
+    @objc dynamic var analyticsEnabled: Bool {
+        get {
+            return Analytics.enabled
+        }
+        
+        set {
+            Analytics.enabled = newValue
+            Crashes.enabled = newValue
+        }
+    }
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         let mainWindowController = MainWindowController()
         mainWindowController.showWindow(self)
@@ -40,13 +51,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 extension AppDelegate {
     
     func configureAnalytics() {
-        if UserDefaults.disableAnalytics { return }
-        
         #if !DEBUG
         let appCenterSecret = AppCenterConfig.secret
         guard appCenterSecret != "" else { fatalError("Failed to get AppCenter secret") }
         AppCenter.start(withAppSecret: appCenterSecret, services: [Analytics.self, Crashes.self])
-        guard Analytics.enabled else { fatalError("Failed to enable analytics") }
         #endif
     }
 }
