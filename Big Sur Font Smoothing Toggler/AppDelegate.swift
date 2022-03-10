@@ -36,11 +36,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        configureAnalytics()
-        
         let mainWindowController = MainWindowController()
         mainWindowController.showWindow(self)
         self.mainWindowController = mainWindowController
+        
+        configureAnalytics()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
