@@ -98,7 +98,7 @@ class MainWindowController: NSWindowController {
         guard let window = self.window else { return }
         let alert = NSAlert()
         alert.messageText = NSLocalizedString("Font smoothing preferences successfully updated", comment: "Title for preferences update success sheet modal")
-        alert.informativeText = NSLocalizedString("Log out or restart your Mac for the changes to take effect.", comment: "Informative text for preferences update success sheet modal")
+        alert.informativeText = NSLocalizedString("Log out or restart your Mac for the changes to take effect across all windows. You can also apply the new font smoothing setting to individual windows by closing and re-opening them.", comment: "Informative text for preferences update success sheet modal")
         alert.addButton(withTitle: NSLocalizedString("Log out now", comment: "Log out now button text"))
         alert.addButton(withTitle: NSLocalizedString("Log out later", comment: "Log out later button text"))
         alert.alertStyle = .informational
