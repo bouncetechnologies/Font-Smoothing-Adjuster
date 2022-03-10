@@ -36,7 +36,7 @@
 "H8h-7b-M4v.title" = "Présentation";
 
 /* Class = "NSMenuItem"; title = "Allow Anonymous Analytics"; ObjectID = "HOq-Gv-33I"; */
-"HOq-Gv-33I.title" = "[LOCALISE_ME]";
+"HOq-Gv-33I.title" = "Autoriser la collecte de données anonyme";
 
 /* Class = "NSMenu"; title = "View"; ObjectID = "HyV-fh-RgO"; */
 "HyV-fh-RgO.title" = "Présentation";
