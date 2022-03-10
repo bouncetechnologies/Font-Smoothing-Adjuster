@@ -22,6 +22,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @objc dynamic var analyticsEnabled: Bool {
         get {
+            if !AppCenter.isConfigured {
+                configureAnalytics()
+            }
+            
             return Analytics.enabled
         }
         
@@ -32,11 +36,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        configureAnalytics()
+        
         let mainWindowController = MainWindowController()
         mainWindowController.showWindow(self)
         self.mainWindowController = mainWindowController
-        
-        configureAnalytics()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
