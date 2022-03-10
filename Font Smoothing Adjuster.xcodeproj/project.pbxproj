@@ -32,6 +32,8 @@
 		53A9B3C025E7B6560018E1FC /* AppCenterAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 53A9B3BF25E7B6560018E1FC /* AppCenterAnalytics */; };
 		9308ED3925C32444008EC774 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9308ED3825C32444008EC774 /* Sparkle.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		9308ED3C25C3245C008EC774 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9308ED3825C32444008EC774 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9323F17D27DA271100DB49C4 /* AppCenterAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9323F17C27DA271100DB49C4 /* AppCenterAnalytics */; };
+		9323F17F27DA271900DB49C4 /* AppCenterCrashes in Frameworks */ = {isa = PBXBuildFile; productRef = 9323F17E27DA271900DB49C4 /* AppCenterCrashes */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +121,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9323F17D27DA271100DB49C4 /* AppCenterAnalytics in Frameworks */,
+				9323F17F27DA271900DB49C4 /* AppCenterCrashes in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +254,8 @@
 			);
 			name = "Font Smoothing AdjusterUITests";
 			packageProductDependencies = (
+				9323F17C27DA271100DB49C4 /* AppCenterAnalytics */,
+				9323F17E27DA271900DB49C4 /* AppCenterCrashes */,
 			);
 			productName = "Big Sur Font Smoothing TogglerUITests";
 			productReference = 5350904A2562BD95005CCD39 /* Font Smoothing AdjusterUITests.xctest */;
@@ -746,6 +752,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 53A9B3BC25E7B6560018E1FC /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */;
 			productName = AppCenterAnalytics;
+		};
+		9323F17C27DA271100DB49C4 /* AppCenterAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53A9B3BC25E7B6560018E1FC /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */;
+			productName = AppCenterAnalytics;
+		};
+		9323F17E27DA271900DB49C4 /* AppCenterCrashes */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 53A9B3BC25E7B6560018E1FC /* XCRemoteSwiftPackageReference "appcenter-sdk-apple" */;
+			productName = AppCenterCrashes;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
