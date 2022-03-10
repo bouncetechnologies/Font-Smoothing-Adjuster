@@ -16,11 +16,14 @@ class FontSmoothingDefaults {
     }
     
     func setFontSmoothing(option: FontSmoothingOptions) throws {
-//        let value = option.rawValue as CFNumber
         let value: CFNumber?
         if option.rawValue == 0 {
             value = option.rawValue as CFNumber
         } else {
+            // CFPreferencesSetValue removes the key when value is set to NULL.
+            // The AppleFontSmoothing key is not present by default, so when the
+            // user selects "Enabled", we remove the key to so that the default
+            // OS font smoothing behaviour is adopted.
             value = nil
         }
         
