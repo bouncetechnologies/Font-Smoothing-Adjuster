@@ -11,14 +11,22 @@ import os.log
 class FontSmoothingDefaults {
         
     enum FontSmoothingOptions: Int {
-        case noFontSmoothing = 0
-        case lightFontSmoothing = 1
-        case mediumFontSmoothing = 2
-        case heavyFontSmoothing = 3
+        case disabled = 0
+        case enabled = 1
     }
     
     func setFontSmoothing(option: FontSmoothingOptions) throws {
-        let value = option.rawValue as CFNumber
+        let value: CFNumber?
+        if option.rawValue == 0 {
+            value = option.rawValue as CFNumber
+        } else {
+            // CFPreferencesSetValue removes the key when value is set to NULL.
+            // The AppleFontSmoothing key is not present by default, so when the
+            // user selects "Enabled", we remove the key to so that the default
+            // OS font smoothing behaviour is adopted.
+            value = nil
+        }
+        
         let key = CFPreferencesConstants.key
         let applicationID = CFPreferencesConstants.applicationID
         let userName = CFPreferencesConstants.userName
@@ -32,7 +40,7 @@ class FontSmoothingDefaults {
     }
     
     func getFontSmoothingState() throws -> FontSmoothingOptions {
-        let value = CFPreferencesCopyAppValue(CFPreferencesConstants.key, CFPreferencesConstants.applicationID) as? Int ?? FontSmoothingOptions.mediumFontSmoothing.rawValue
+        let value = CFPreferencesCopyAppValue(CFPreferencesConstants.key, CFPreferencesConstants.applicationID) as? Int ?? FontSmoothingOptions.enabled.rawValue
         
         guard let option = FontSmoothingOptions(rawValue: value) else {
             throw FontSmoothingDefaultsError.unknownError
