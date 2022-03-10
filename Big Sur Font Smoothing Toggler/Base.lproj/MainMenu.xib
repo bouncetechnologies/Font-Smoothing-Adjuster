@@ -165,8 +165,5 @@
         </menu>
         <customObject id="CwV-Nc-FtL" customClass="SUUpdater"/>
         <userDefaultsController representsSharedInstance="YES" id="yfj-eY-49O"/>
-        <menuItem title="Item" id="EKp-ue-sTI">
-            <modifierMask key="keyEquivalentModifierMask"/>
-        </menuItem>
     </objects>
 </document>
