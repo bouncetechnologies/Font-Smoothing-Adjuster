@@ -49,7 +49,7 @@
                                     </binding>
                                 </connections>
                             </menuItem>
-                            <menuItem isSeparatorItem="YES" id="R4Q-wB-JEr"/>
+                            <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
                             <menuItem title="Services" id="NMo-om-nkz">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
