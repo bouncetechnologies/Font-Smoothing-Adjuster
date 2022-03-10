@@ -24,7 +24,7 @@
 "DVo-aG-piG.title" = "Fermer";
 
 /* Class = "NSMenuItem"; title = "Sponsor This Project"; ObjectID = "Era-1d-0C9"; */
-"Era-1d-0C9.title" = "[LOCALISE_ME]";
+"Era-1d-0C9.title" = "Sponsoriser ce projet";
 
 /* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
 "F2S-fz-NVQ.title" = "Aide";
