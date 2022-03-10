@@ -49,6 +49,7 @@
                                     </binding>
                                 </connections>
                             </menuItem>
+                            <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
                             <menuItem isSeparatorItem="YES" id="R4Q-wB-JEr"/>
                             <menuItem title="Services" id="NMo-om-nkz">
                                 <modifierMask key="keyEquivalentModifierMask"/>
