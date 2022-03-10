@@ -63,7 +63,7 @@ class Big_Sur_Font_Smoothing_TogglerUITests: XCTestCase {
         bigSurFontSmoothingTogglerWindow.radioButtons["Enabled (default)"].click()
         logOutLaterButton.click()
         let enabledResult = try? runDefaultsCommand(with: getFontSmoothingStateArguments)
-        XCTAssert(enabledResult?.output == "2\n")
+        XCTAssert(enabledResult!.error.contains("The domain/default pair of (kCFPreferencesAnyApplication, AppleFontSmoothing) does not exist"))
     }
     
     private let getFontSmoothingStateArguments = ["-currentHost", "read", "Apple Global Domain", "AppleFontSmoothing"]
