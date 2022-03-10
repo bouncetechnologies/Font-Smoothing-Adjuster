@@ -20,11 +20,11 @@
 /* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
 "AYu-sK-qS6.title" = "Hauptmenü";
 
-/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "BOF-NM-1cW"; */
-"BOF-NM-1cW.title" = "Einstellungen…";
-
 /* Class = "NSMenuItem"; title = "Close"; ObjectID = "DVo-aG-piG"; */
 "DVo-aG-piG.title" = "Schließen";
+
+/* Class = "NSMenuItem"; title = "Sponsor This Project"; ObjectID = "Era-1d-0C9"; */
+"Era-1d-0C9.title" = "Sponsern Sie dieses Projekt";
 
 /* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
 "F2S-fz-NVQ.title" = "Hilfe";
@@ -34,6 +34,9 @@
 
 /* Class = "NSMenuItem"; title = "View"; ObjectID = "H8h-7b-M4v"; */
 "H8h-7b-M4v.title" = "Darstellung";
+
+/* Class = "NSMenuItem"; title = "Allow Anonymous Analytics"; ObjectID = "HOq-Gv-33I"; */
+"HOq-Gv-33I.title" = "Anonyme Analysen zulassen";
 
 /* Class = "NSMenu"; title = "View"; ObjectID = "HyV-fh-RgO"; */
 "HyV-fh-RgO.title" = "Darstellung";
