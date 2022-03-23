@@ -14,6 +14,7 @@ import AppCenterCrashes
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     var mainWindowController: MainWindowController?
+    var analyticsInitialised = false
     
     @IBAction func sponsorshipButtonPressed(_ sender: NSMenuItem) {
         guard let sponsorshipURL = URL(string: "https://www.buymeacoffee.com/bouncetech") else { return }
@@ -22,9 +23,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @objc dynamic var analyticsEnabled: Bool {
         get {
-            if !AppCenter.isConfigured {
-                configureAnalytics()
-            }
+            configureAnalytics()
             
             return Analytics.enabled
         }
@@ -55,10 +54,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 extension AppDelegate {
     
     func configureAnalytics() {
+        if analyticsInitialised { return }
+        
         #if !DEBUG
         let appCenterSecret = AppCenterConfig.secret
         guard appCenterSecret != "" else { fatalError("Failed to get AppCenter secret") }
-        AppCenter.start(withAppSecret: appCenterSecret, services: [Analytics.self, Crashes.self])
+        
+        AppCenter.configure(withAppSecret: appCenterSecret)
+        
+        if AppCenter.isConfigured {
+            AppCenter.startService(Analytics.self)
+            AppCenter.startService(Crashes.self)
+            analyticsInitialised = true
+        }
         #endif
     }
 }
