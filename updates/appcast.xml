@@ -79,5 +79,19 @@
                 <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster1.2.1-0.1.delta" sparkle:version="1.2.1" sparkle:shortVersionString="1.2.1" sparkle:deltaFrom="0.1" length="325814" type="application/octet-stream" sparkle:edSignature="g7k1jFxrrXRk1pTJTr93ikzk72E+4bYGxQO9vk6fDnRbGEm92moReeeoB058Z+MuGcmoSuqcyhL6iYWf5MrhCg=="/>
             </sparkle:deltas>
         </item>
+        <item>
+            <title>1.3</title>
+            <pubDate>Thu, 10 Mar 2022 16:09:00 +0000</pubDate>
+            <sparkle:minimumSystemVersion>10.15</sparkle:minimumSystemVersion>
+            <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster%201.3.dmg" sparkle:version="1.3" sparkle:shortVersionString="1.3" length="1963393" type="application/octet-stream" sparkle:edSignature="0qCYvlCxwY6guBafiSyg/CZIooI1MB1kc8KoAQ0syZYpwU4bc/VfkipDpXpdJiqyblWUkr/tKIz7y2FVHB8pCQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster1.3-1.2.1.delta" sparkle:version="1.3" sparkle:shortVersionString="1.3" sparkle:deltaFrom="1.2.1" length="417648" type="application/octet-stream" sparkle:edSignature="OA/UW4dHq9lyP3eI+hr9vi7Kwg3eVT6WHJS+iq1b55DsYS6H9IfaWKyE1Hz7KuVYkmUkhoJ2VNZlVElZ4BUKBg=="/>
+                <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster1.3-1.2.delta" sparkle:version="1.3" sparkle:shortVersionString="1.3" sparkle:deltaFrom="1.2" length="461389" type="application/octet-stream" sparkle:edSignature="U+v4u9Dn1IhWpsroWBQib04p8kT8oupaYFuYQAf6pOJHzY8yNuid8oDN77KekgPYuxJBbUJjY0OVgepi7TLPAw=="/>
+                <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster1.3-1.1.1.delta" sparkle:version="1.3" sparkle:shortVersionString="1.3" sparkle:deltaFrom="1.1.1" length="472404" type="application/octet-stream" sparkle:edSignature="25hJZIcz/p0BTsSCWv2+000OiQBkjUZnmNFvS6v95Dxo0ggPGJ+Vm+Db4EWLXeMNHC7WyDTOs49Pks01obwqCg=="/>
+                <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster1.3-1.1.delta" sparkle:version="1.3" sparkle:shortVersionString="1.3" sparkle:deltaFrom="1.1" length="472388" type="application/octet-stream" sparkle:edSignature="7SFkeJRGV9wVKh3rQ/cRV9lH8RT/LFocImvbIwFao4nDQMrLun0ta1zQzbgRw42B8oj/OTcbJM/WUb67kgCrDA=="/>
+                <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster1.3-1.0.delta" sparkle:version="1.3" sparkle:shortVersionString="1.3" sparkle:deltaFrom="1.0" length="467354" type="application/octet-stream" sparkle:edSignature="fO9qaG1F+cTuNAaBUZQR96+wCXfkeEPq+79A5gFtuxUJ7lxefHnLI0ISqXfTOviJQYqVJRmhFyFVmGP6pGYdBQ=="/>
+                <enclosure url="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/Font%20Smoothing%20Adjuster1.3-0.2.delta" sparkle:version="1.3" sparkle:shortVersionString="1.3" sparkle:deltaFrom="0.2" length="553123" type="application/octet-stream" sparkle:edSignature="2nvotNhbKiuay82QqVXfKhDWPEtD9vYoySba68cLN0D4qyWeQeDXubCyHlOzb4/lJ3famPR2MFk1ZQfnSF22AQ=="/>
+            </sparkle:deltas>
+        </item>
     </channel>
 </rss>
