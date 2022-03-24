@@ -9,7 +9,7 @@
 ### Re-enable the font smoothing controls removed in macOS Big Sur.
 Font Smoothing Adjuster is a tiny, native macOS app that lets you adjust your font smoothing preferences in a graphical user interface. Issues and pull requests welcome!
 
-<img src="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/app-dark-disabled%402x.png" alt="Screenshot of the Font Smoothing Adjuster app" width="529" height="343">
+<img src="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/app-dark-disabled%402x.png?bustcache" alt="Screenshot of the Font Smoothing Adjuster app" width="529" height="343">
 
 Download the app at [fontsmoothingadjuster.com](https://www.fontsmoothingadjuster.com).
 
