@@ -35,22 +35,33 @@ class FontSmoothingDefaults {
         CFPreferencesSetValue(key, value, applicationID, userName, hostName)
         let result = CFPreferencesSynchronize(applicationID, userName, hostName)
         guard result else {
-            throw FontSmoothingDefaultsError.unknownError
+            throw FontSmoothingDefaultsError.snychronisingCFPreferencesFailed
         }
     }
     
     func getFontSmoothingState() throws -> FontSmoothingOptions {
         let value = CFPreferencesCopyAppValue(CFPreferencesConstants.key, CFPreferencesConstants.applicationID) as? Int ?? FontSmoothingOptions.enabled.rawValue
         
-        guard let option = FontSmoothingOptions(rawValue: value) else {
-            throw FontSmoothingDefaultsError.unknownError
+        let fontSmoothingOptionValue = getValidFontSmoothingOptionValue(value)
+        
+        guard let option = FontSmoothingOptions(rawValue: fontSmoothingOptionValue) else {
+            throw FontSmoothingDefaultsError.invalidFontSmoothingOptionFound
         }
         
         return option
     }
     
+    private func getValidFontSmoothingOptionValue(_ value: Int) -> Int {
+        if value == 0 {
+            return FontSmoothingOptions.disabled.rawValue
+        } else {
+            return FontSmoothingOptions.enabled.rawValue
+        }
+    }
+    
     private enum FontSmoothingDefaultsError: Error {
-        case unknownError
+        case invalidFontSmoothingOptionFound
+        case snychronisingCFPreferencesFailed
     }
     
     private struct CFPreferencesConstants {
