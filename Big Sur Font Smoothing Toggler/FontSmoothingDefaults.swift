@@ -42,11 +42,21 @@ class FontSmoothingDefaults {
     func getFontSmoothingState() throws -> FontSmoothingOptions {
         let value = CFPreferencesCopyAppValue(CFPreferencesConstants.key, CFPreferencesConstants.applicationID) as? Int ?? FontSmoothingOptions.enabled.rawValue
         
-        guard let option = FontSmoothingOptions(rawValue: value) else {
             throw FontSmoothingDefaultsError.unknownError
+        let fontSmoothingOptionValue = getValidFontSmoothingOptionValue(value)
+        
+        guard let option = FontSmoothingOptions(rawValue: fontSmoothingOptionValue) else {
         }
         
         return option
+    }
+    
+    private func getValidFontSmoothingOptionValue(_ value: Int) -> Int {
+        if value == 0 {
+            return FontSmoothingOptions.disabled.rawValue
+        } else {
+            return FontSmoothingOptions.enabled.rawValue
+        }
     }
     
     private enum FontSmoothingDefaultsError: Error {
