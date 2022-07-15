@@ -21,16 +21,10 @@ On previous releases of macOS, you could disable font smoothing from the General
 This annoyed us, so we made a tiny app that lets you easily choose what level of font smoothing you would like, or disable it altogether.
 
 ## Can't I just use terminal commands to adjust font smoothing?
-Absolutely. If you’re comfortable using a terminal, you can also use the following commands to set your desired level of font smoothing instead of using the app. You will need to log off or restart your Mac for the changes to take effect.
+Absolutely. If you’re comfortable using a terminal, you can also use the following commands to set your desired level of font smoothing instead of using the app. You will need to log off or restart your Mac for the changes to take effect across all apps.
 
 #### Disable font smoothing:
 ```defaults -currentHost write -g AppleFontSmoothing -int 0```
-#### Light font smoothing:
-```defaults -currentHost write -g AppleFontSmoothing -int 1```
-#### Medium font smoothing (default):
-```defaults -currentHost write -g AppleFontSmoothing -int 2```
-#### Heavy font smoothing:
-```defaults -currentHost write -g AppleFontSmoothing -int 3```
 #### Reset to default font smoothing level (medium):
 ```defaults -currentHost delete -g AppleFontSmoothing```
 
