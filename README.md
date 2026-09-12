@@ -6,12 +6,15 @@
 ![Languages](https://img.shields.io/badge/Languages-en%2C%20es%2C%20fr%2C%20de-brightgreen)
 
 # Font Smoothing Adjuster
+
+> **Warning:** `fontsmoothingadjuster.com` is no longer associated with Font Smoothing Adjuster. Do not use the old domain to download the app. Official downloads are available on [GitHub Releases](https://github.com/bouncetechnologies/Font-Smoothing-Adjuster/releases).
+
 ### Re-enable the font smoothing controls removed in macOS Big Sur.
 Font Smoothing Adjuster is a tiny, native macOS app that lets you adjust your font smoothing preferences in a graphical user interface. Issues and pull requests welcome!
 
 <img src="https://font-smoothing-adjuster-updates.s3.eu-west-2.amazonaws.com/app-dark-disabled%402x.png?bustcache" alt="Screenshot of the Font Smoothing Adjuster app" width="529" height="343">
 
-Download the app at [fontsmoothingadjuster.com](https://www.fontsmoothingadjuster.com).
+Download the app from [GitHub Releases](https://github.com/bouncetechnologies/Font-Smoothing-Adjuster/releases).
 
 ## What is font smoothing?
 Font smoothing is something that macOS does to make your fonts look slightly bolder. This has the side-effect of messing with carefully designed character shapes produced by font creators, and makes text more blurry. See the font smoothing section of [Nikita Prokopov’s excellent article](https://tonsky.me/blog/monitors/#turn-off-font-smoothing) for more details.
